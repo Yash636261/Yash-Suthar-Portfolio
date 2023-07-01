@@ -8,23 +8,23 @@ function Navbar() {
   };
 
   return (
-    <div className="w-full mr-5 fixed ">
-      <nav className="relative w-full flex flex-col bg-[#1f1f1f] drop-shadow-sm">
-        <div className=' p-3 border border-transparent rounded-lg shadow-md'>
-          <div className="container mx-auto flex justify-between">
-            <div className="border-0 p-1 rounded-lg drop-shadow-lg backdrop-blur-sm">
+    <div className="w-full fixed  shadow-black ">
+      <nav className="relative bg-[#1f1f1f] shadow-black">
+        <div className='flex w-full p-3 border border-transparent rounded-lg shadow-md'>
+          <div className="container mx-auto flex justify-end">
+            {/* <div className="border-0 p-1 rounded-lg drop-shadow-lg backdrop-blur-sm">
               <a
                 className=" text-white hover:text-blue-200 text-2xl font-bold"
                 href="/general"
               >
                 Yash Suthar
               </a>
-            </div>
+            </div> */}
             <div
-              className="text-white max-md:hidden text-sm font-bold mx-auto"
+              className="text-white max-md:hidden text-xl font-bold mx-auto"
             >
-              <ul className="flex mx-2 border-0 p-2 rounded-lg drop-shadow-lg backdrop-blur-sm">
-                <li className="mr-4">
+              <ul className="w-full flex mx-2 border-0 p-2 rounded-lg drop-shadow-lg backdrop-blur-sm">
+                <li className="mr-12">
                   <a
                     className="text-white hover:text-gray-400"
                     aria-current="page"
@@ -33,17 +33,17 @@ function Navbar() {
                     Home
                   </a>
                 </li>
-                <li className="mr-4">
+                <li className="mr-12">
                   <a className=" hover:text-gray-400" href="/entertainment">
                     About Me
                   </a>
                 </li>
-                <li className="mr-4">
+                <li className="mr-12">
                   <a className=" hover:text-gray-400" href="/general">
                     Portfolio
                   </a>
                 </li>
-                <li className="mr-4">
+                <li className="mr-12">
                   <a className=" hover:text-gray-400" href="/technology">
                     Contact Me
                   </a>
@@ -51,7 +51,7 @@ function Navbar() {
               </ul>
             </div>
             <button
-              className="text-white md:hidden bg-black w-8 h-8 border-0 rounded-md p-1 my-auto"
+              className=" text-black md:hidden bg-white w-8 h-8 border-0 rounded-md p-1 my-auto"
               onClick={chageToggle}
               type="button"
               data-bs-toggle="collapse"
@@ -86,7 +86,7 @@ function Navbar() {
               id="navbarSupportedContent"
             >
               <ul className="flex flex-col mx-2 border-0 p-2 rounded-lg drop-shadow-lg backdrop-blur-sm">
-                <li className="mr-4">
+                <li className="mr-12">
                   <a
                     className="text-white hover:text-gray-400"
                     aria-current="page"
@@ -95,17 +95,17 @@ function Navbar() {
                     Home
                   </a>
                 </li>
-                <li className="mr-4">
+                <li className="mr-12">
                   <a className=" hover:text-gray-400" href="/entertainment">
                     About Me
                   </a>
                 </li>
-                <li className="mr-4">
+                <li className="mr-12">
                   <a className=" hover:text-gray-400" href="/general">
                     Portfolio
                   </a>
                 </li>
-                <li className="mr-4">
+                <li className="mr-12">
                   <a className=" hover:text-gray-400" href="/technology">
                     Contact Me
                   </a>
