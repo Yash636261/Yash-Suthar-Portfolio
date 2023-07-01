@@ -8,7 +8,7 @@ function Navbar() {
   };
 
   return (
-    <div className="w-full fixed  shadow-black ">
+    <div className="w-full  shadow-black ">
       <nav className="relative bg-[#1f1f1f] shadow-black">
         <div className='flex w-full p-3 border border-transparent rounded-lg shadow-md'>
           <div className="container mx-auto flex justify-end">
