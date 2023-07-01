@@ -8,8 +8,8 @@ function Navbar() {
   };
 
   return (
-    <div className="w-full  shadow-black ">
-      <nav className="relative bg-[#1f1f1f] shadow-black">
+    <div className="w-full  shadow-black text-blue bg-gray ">
+      <nav className="relative shadow-black">
         <div className='flex w-full p-3 border border-transparent rounded-lg shadow-md'>
           <div className="container mx-auto flex justify-end">
             {/* <div className="border-0 p-1 rounded-lg drop-shadow-lg backdrop-blur-sm">
@@ -21,12 +21,12 @@ function Navbar() {
               </a>
             </div> */}
             <div
-              className="text-white max-md:hidden text-xl font-bold mx-auto"
+              className=" max-md:hidden text-xl font-bold mx-auto"
             >
               <ul className="w-full flex mx-2 border-0 p-2 rounded-lg drop-shadow-lg backdrop-blur-sm">
                 <li className="mr-12">
                   <a
-                    className="text-white hover:text-gray-400"
+                    className=" hover:text-gray-400"
                     aria-current="page"
                     href="/"
                   >
