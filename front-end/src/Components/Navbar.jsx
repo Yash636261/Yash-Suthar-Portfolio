@@ -8,7 +8,7 @@ function Navbar() {
   };
 
   return (
-    <div className="w-full z-10 fixed  shadow-black text-moderate bg-dark ">
+    <div className="w-full z-10 fixed  shadow-black text-light bg-dark ">
       <nav className="relative shadow-black">
         <div className='flex w-full p-3 border border-transparent rounded-lg shadow-md'>
           <div className="container mx-auto flex justify-end">
@@ -26,7 +26,7 @@ function Navbar() {
               <ul className="w-full flex mx-2 border-0 p-2 rounded-lg drop-shadow-lg backdrop-blur-sm">
                 <li className="mr-12">
                   <a
-                    className=" hover:text-light"
+                    className="text-moderate"
                     aria-current="page"
                     href="/"
                   >
@@ -34,17 +34,17 @@ function Navbar() {
                   </a>
                 </li>
                 <li className="mr-12">
-                  <a className=" hover:text-light" href="/About">
+                  <a className=" hover:text-moderate" href="/About">
                     About Me
                   </a>
                 </li>
                 <li className="mr-12">
-                  <a className=" hover:text-light" href="/Portfolio">
+                  <a className=" hover:text-moderate" href="/Portfolio">
                     Portfolio
                   </a>
                 </li>
                 <li className="mr-12">
-                  <a className=" hover:text-light" href="/Contact">
+                  <a className=" hover:text-moderate" href="/Contact">
                     Contact Me
                   </a>
                 </li>
@@ -88,7 +88,7 @@ function Navbar() {
               <ul className="flex flex-col mx-2 border-0 p-2 rounded-lg drop-shadow-lg backdrop-blur-sm">
                 <li className="mr-12 border-b-2">
                   <a
-                    className=" hover:text-light"
+                    className="text-moderate"
                     aria-current="page"
                     href="/"
                   >
@@ -96,17 +96,17 @@ function Navbar() {
                   </a>
                 </li>
                 <li className="mr-12 border-b-2">
-                  <a className=" hover:text-light" href="/entertainment">
+                  <a className=" hover:text-moderate" href="/entertainment">
                     About Me
                   </a>
                 </li>
                 <li className="mr-12 border-b-2">
-                  <a className=" hover:text-light" href="/general">
+                  <a className=" hover:text-moderate" href="/general">
                     Portfolio
                   </a>
                 </li>
                 <li className="mr-12 border-b-2">
-                  <a className=" hover:text-light" href="/technology">
+                  <a className=" hover:text-moderate" href="/technology">
                     Contact Me
                   </a>
                 </li>
