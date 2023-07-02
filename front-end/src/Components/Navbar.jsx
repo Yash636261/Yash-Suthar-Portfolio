@@ -21,7 +21,7 @@ function Navbar() {
               </a>
             </div> */}
             <div
-              className=" max-md:hidden text-xl font-bold mx-auto"
+              className=" max-md:hidden text-xl font-s font-bold mx-auto tracking-wider"
             >
               <ul className="w-full flex mx-2 border-0 p-2 rounded-lg drop-shadow-lg backdrop-blur-sm">
                 <li className="mr-12">
@@ -34,17 +34,17 @@ function Navbar() {
                   </a>
                 </li>
                 <li className="mr-12">
-                  <a className=" hover:text-light" href="/entertainment">
+                  <a className=" hover:text-light" href="/About">
                     About Me
                   </a>
                 </li>
                 <li className="mr-12">
-                  <a className=" hover:text-light" href="/general">
+                  <a className=" hover:text-light" href="/Portfolio">
                     Portfolio
                   </a>
                 </li>
                 <li className="mr-12">
-                  <a className=" hover:text-light" href="/technology">
+                  <a className=" hover:text-light" href="/Contact">
                     Contact Me
                   </a>
                 </li>

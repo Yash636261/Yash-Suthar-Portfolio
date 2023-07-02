@@ -6,7 +6,7 @@ import About from './Components/About'
 
 function App() {
   return (
-    <div className='bg-[#1f1f1f]'>
+    <div className='bg-[#1f1f1f] font-sans'>
       <Navbar/>
       <Hero/>
       <About/>
