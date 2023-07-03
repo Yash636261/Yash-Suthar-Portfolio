@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 function Navbar() {
   const [Toggle, setToggle] = useState(false);
@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <div className="w-full z-10 fixed  shadow-black text-light bg-dark ">
       <nav className="relative shadow-black">
-        <div className='flex w-full p-3 border border-transparent rounded-lg shadow-md'>
+        <div className='flex w-full p-2 border border-transparent rounded-lg shadow-md'>
           <div className="container mx-auto flex justify-end">
             {/* <div className="border-0 p-1 rounded-lg drop-shadow-lg backdrop-blur-sm">
               <a
@@ -21,10 +21,10 @@ function Navbar() {
               </a>
             </div> */}
             <div
-              className=" max-md:hidden text-xl font-s font-bold mx-auto tracking-wider"
+              className=" max-md:hidden text-xs font-bold mx-auto"
             >
               <ul className="w-full flex mx-2 border-0 p-2 rounded-lg drop-shadow-lg backdrop-blur-sm">
-                <li className="mr-12">
+                <li className="mr-6">
                   <a
                     className="text-moderate"
                     aria-current="page"
@@ -33,17 +33,17 @@ function Navbar() {
                     Home
                   </a>
                 </li>
-                <li className="mr-12">
+                <li className="mr-6">
                   <a className=" hover:text-moderate" href="/About">
                     About Me
                   </a>
                 </li>
-                <li className="mr-12">
+                <li className="mr-6">
                   <a className=" hover:text-moderate" href="/Portfolio">
                     Portfolio
                   </a>
                 </li>
-                <li className="mr-12">
+                <li className="mr-6">
                   <a className=" hover:text-moderate" href="/Contact">
                     Contact Me
                   </a>
@@ -80,13 +80,13 @@ function Navbar() {
         <div className=""></div>
 
         {Toggle && (
-          <div className="absolute right-2 max-w-64 h-screen bg-dark shadow-black shadow-xl ">
+          <div className=" md:invisible visible absolute right-0 max-w-64 h-screen bg-dark shadow-black shadow-xl ">
             <div
-              className=" text-xl font-bold mx-auto"
+              className=" text-s font-bold mx-auto"
               id="navbarSupportedContent"
             >
               <ul className="flex flex-col mx-2 my-10 justify-between h-40 border-0 p-2 rounded-lg drop-shadow-lg backdrop-blur-sm text-light">
-                <li className="mr-12">
+                <li className="mr-6">
                   <a
                     className="text-moderate"
                     aria-current="page"
@@ -95,17 +95,17 @@ function Navbar() {
                     Home
                   </a>
                 </li>
-                <li className="mr-12">
+                <li className="mr-6">
                   <a className=" hover:text-moderate" href="/entertainment">
                     About Me
                   </a>
                 </li>
-                <li className="mr-12">
+                <li className="mr-6">
                   <a className=" hover:text-moderate" href="/general">
                     Portfolio
                   </a>
                 </li>
-                <li className="mr-12">
+                <li className="mr-6">
                   <a className=" hover:text-moderate" href="/technology">
                     Contact Me
                   </a>
