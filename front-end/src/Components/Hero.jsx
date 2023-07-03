@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero() {
   return (
-    <div className='h-screen mx-20'>
+    <div className='h-screen mx-auto max-w-6xl'>
       <div className='flex flex-row mx-auto text-light h-full justify-around items-center'>
       {/* bg-[url("../public/background.png")] bg-no-repeat bg-cover bg-blend-darken max-w-7xl bg-gray-600 */}
         <div className='text-left my-auto'>

@@ -51,7 +51,7 @@ function Navbar() {
               </ul>
             </div>
             <button
-              className=" text-black md:hidden bg-blue w-8 h-8 border-0 rounded-md p-1 my-auto"
+              className="md:hidden bg-moderate w-8 h-8 border-0 rounded-md p-1 my-auto"
               onClick={chageToggle}
               type="button"
               data-bs-toggle="collapse"
@@ -80,13 +80,13 @@ function Navbar() {
         <div className=""></div>
 
         {Toggle && (
-          <div className="absolute right-2 w-32 border-0  rounded-xl mt-2 bg-gray">
+          <div className="absolute right-2 max-w-64 h-screen bg-dark shadow-black shadow-xl ">
             <div
-              className=" text-sm font-bold mx-auto"
+              className=" text-xl font-bold mx-auto"
               id="navbarSupportedContent"
             >
-              <ul className="flex flex-col mx-2 border-0 p-2 rounded-lg drop-shadow-lg backdrop-blur-sm">
-                <li className="mr-12 border-b-2">
+              <ul className="flex flex-col mx-2 my-10 justify-between h-40 border-0 p-2 rounded-lg drop-shadow-lg backdrop-blur-sm text-light">
+                <li className="mr-12">
                   <a
                     className="text-moderate"
                     aria-current="page"
@@ -95,17 +95,17 @@ function Navbar() {
                     Home
                   </a>
                 </li>
-                <li className="mr-12 border-b-2">
+                <li className="mr-12">
                   <a className=" hover:text-moderate" href="/entertainment">
                     About Me
                   </a>
                 </li>
-                <li className="mr-12 border-b-2">
+                <li className="mr-12">
                   <a className=" hover:text-moderate" href="/general">
                     Portfolio
                   </a>
                 </li>
-                <li className="mr-12 border-b-2">
+                <li className="mr-12">
                   <a className=" hover:text-moderate" href="/technology">
                     Contact Me
                   </a>
