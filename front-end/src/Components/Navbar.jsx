@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function Navbar() {
   const [Toggle, setToggle] = useState(false);
