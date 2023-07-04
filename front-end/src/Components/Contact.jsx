@@ -69,8 +69,21 @@ function Contact() {
                 className="block p-2.5 w-full text-sm bg-gray-100 border-gray-300 text-dark placeholder-dark rounded-lg border focus:ring-blue-500 focus:border-blue-500 "
                 placeholder="Leave a comment..."
               ></textarea>
-              
-          <button className=" my-5 bg-moderate text-light py-2 px-4 text-sm font-semibold border rounded-md hover:bg-dark ">send -&gt;</button>
+
+              <button className="flex items-center my-5 bg-moderate text-light py-2 px-4 text-sm font-semibold border rounded-md">
+                <span className="mr-2">Send</span>
+                <span className="pr-3 transition duration-300  hover:translate-x-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="h-8 w-8 "
+                >
+                  <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+                </svg>
+
+                </span>
+              </button>
             </div>
           </div>
         </div>

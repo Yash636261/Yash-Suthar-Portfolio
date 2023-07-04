@@ -21,7 +21,7 @@ function Navbar() {
               </a>
             </div> */}
             <div
-              className=" max-md:hidden text-xs font-bold mx-auto"
+              className=" max-md:hidden text-sm font-bold mx-auto"
             >
               <ul className="w-full flex mx-2 border-0 p-2 rounded-lg drop-shadow-lg backdrop-blur-sm">
                 <li className="mr-6">
