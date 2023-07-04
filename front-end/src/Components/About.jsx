@@ -2,7 +2,7 @@
 
 function About() {
   return (
-    <div className='bg-light min-h-screen text-dark py-20 px-20'>
+    <div className='bg-light min-h-screen text-dark py-20 px-10'>
         <div className='text-center mb-20'>
             <p className='font-bold text-3xl'>About</p>
             <p className='text-sm'>My introduction</p>

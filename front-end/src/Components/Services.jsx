@@ -1,4 +1,4 @@
-import ProjectCards from "./ProjectCards"
+import ProjectCards from "./Cards/ProjectCards"
 
 function Services() {
   return (

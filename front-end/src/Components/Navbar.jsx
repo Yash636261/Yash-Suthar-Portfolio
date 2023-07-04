@@ -8,7 +8,7 @@ function Navbar() {
   };
 
   return (
-    <div className="w-full z-10 fixed  shadow-black text-light bg-dark ">
+    <div className="w-full z-10 fixed  shadow-black text-light bg-dark border border-dark ">
       <nav className="relative shadow-black">
         <div className='flex w-full p-2 border border-transparent rounded-lg shadow-md'>
           <div className="container mx-auto flex justify-end">
@@ -79,8 +79,7 @@ function Navbar() {
 
         <div className=""></div>
 
-        {Toggle && (
-          <div className=" md:invisible visible absolute right-0 max-w-64 h-screen bg-dark shadow-black shadow-xl ">
+          <div className={`transition-transform duration-300 ease-in-out transform ${Toggle ? 'translate-x-1' : 'translate-x-36 shadow-none'} border border-dark md:invisible visible absolute right-0 max-w-64 h-screen bg-dark shadow-black shadow-xl`}>
             <div
               className=" text-s font-bold mx-auto"
               id="navbarSupportedContent"
@@ -113,7 +112,6 @@ function Navbar() {
               </ul>
             </div>
           </div>
-        )}
       </nav>
     </div>
   );

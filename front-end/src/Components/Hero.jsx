@@ -7,7 +7,7 @@ function Hero() {
         <div className='md:text-left text-center my-auto'>
             <p className='text-xl tracking-wider'>Hello, my name is</p>
             <p className='font-bold text-4xl mb-3 tracking-wide'>&lt;YASH SUTHAR&gt;</p>
-            <p className='text-2xl mb-10'> Web dev, Open source, Learn in public</p>
+            <p className='text-xl mb-10'> Building Bridges between Design, Code,<br></br> and User experience.</p>
             <a href="" className='font-semibold text-lg rounded-lg py-1 px-4 hover:text-red-100 bg-moderate text-light'>Download CV</a>
         </div>
         <div className='my-auto max-md:hidden'>

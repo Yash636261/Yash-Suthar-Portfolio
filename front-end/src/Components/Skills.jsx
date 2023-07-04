@@ -1,57 +1,48 @@
+import SkillsCard from "./Cards/SkillsCard"
 
 function Skills() {
-  return (
-    <div className="bg-light text-dark px-5">
-      <div className='py-20 '>
-            <div className='text-center mb-20'>
-                <p className='font-bold text-3xl'>Skills</p>
-                <p className='text-sm'>where i'm proficient</p>
-            </div>
-            <div className='max-w-3xl mx-auto flex justify-between relative text-base h-64'>
-                <div className='flex flex-col justify-between'>
-                    <a href="">HTML/CSS</a>
-                    <a href="">JavaScript</a>
-                    <a href="">Tailwind</a>
-                    <a href="">React</a>
-                    <a href="">NEXT.js</a>
-                </div>
-                <div className='flex flex-col justify-between'>
-                    <a href="">Responsive Design</a>
-                    <a href="">Web Performance Optimization</a>
-                    <a href="">Testing and Debugging</a>
-                    <a href="">Version Control</a>
-                    <a href="">Browser Developer Tools</a>
-                </div>
-            </div>
-            {/* <div className='flex justify-around items-center max-w-3xl mx-auto'>
-                <div className='bg-moderate p-3 border rounded-2xl w-72'>
-                    <div className='flex'>
-                        <img className='w-20 h-11 object-top object-cover' src="https://www.frontend-gmbh.de/wp-content/themes/frontendgmbh/downloads/frontend-logo.png" alt="" /> 
-                        <p className='my-auto font-bold text-3xl'>Front-End</p>
-                    </div>
-                    <div className='font-medium text-3xl my-10 ml-5'>
-                        <ul>
-                            <li><a href="">React</a></li>
-                            <li><a href="">Next.js</a></li>
-                            <li><a href="">Tailwind</a></li>
-                            <li><a href="">JavaScript</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div className='bg-moderate p-3 border rounded-2xl w-72'>
-                    <div className='flex'>
-                        <img className='w-16 h-16' src="https://cdn1.iconfinder.com/data/icons/industrial-35/60/setting__industrial__screen__LCD__energy-512.png" alt="" />
-                        <p className='my-auto font-bold text-3xl'>Back-End</p>
-                    </div>
-                    <div className='font-medium text-3xl my-10 ml-5'>
-                        <ul>
-                            <li><a href="">React</a></li>
-                            <li><a href="">Next.js</a></li>
-                            <li><a href="">Tailwind</a></li>
-                            <li><a href="">JavaScript</a></li>
-                        </ul>
-                    </div>
-                </div>
+    const cardData={
+        card1:{
+            heading : 'Front-end',
+            description :'Creating intuitive, responsive, and visually appealing user interfaces and experiences.',
+            techAndTools : 'HTML/CSS Javascript React NEXT.js'
+        },
+        card2:{
+            heading : 'Back-end',
+            description :'Designing and developing scalable, efficient, and secure server-side applications.',
+            techAndTools : 'Express Node.js'
+        },
+        card3:{
+            heading : 'Database',
+            description :'Managing, organizing, and optimizing databases for efficient data storage and retrieval.',
+            techAndTools : 'MySQL MongoDB'
+        }
+        
+    }
+  
+    return (
+      <div className="bg-light text-dark px-5">
+        <div className='py-20 '>
+          <div className='text-center mb-20'>
+            <p className='font-bold text-3xl'>Skills</p>
+            <p className='text-sm'>where I'm proficient</p>
+          </div>
+          <div className="max-w-5xl mx-auto flex md:flex-wrap max-md:flex-col justify-around">
+            <SkillsCard heading={cardData.card1.heading} description={cardData.card1.description} techAndTools={cardData.card1.techAndTools} />
+            <SkillsCard heading={cardData.card2.heading} description={cardData.card2.description} techAndTools={cardData.card2.techAndTools} />
+            <SkillsCard heading={cardData.card3.heading} description={cardData.card3.description} techAndTools={cardData.card3.techAndTools} />
+           </div>
+           {/* <div className='max-w-3xl mx-auto flex flex-wrap justify-around text-lg h-64 font-semibold'>
+                    <a className="m-3" href="">HTML/CSS</a>
+                    <a className="m-3" href="">JavaScript</a>
+                    <a className="m-3" href="">Tailwind</a>
+                    <a className="m-3" href="">React</a>
+                    <a className="m-3" href="">NEXT.js</a>
+                    <a className="m-3" href="">Responsive Design</a>
+                    <a className="m-3" href="">Web Performance Optimization</a>
+                    <a className="m-3" href="">Testing and Debugging</a>
+                    <a className="m-3" href="">Version Control</a>
+                    <a className="m-3" href="">Browser Developer Tools</a>
             </div> */}
         </div>
     </div>
