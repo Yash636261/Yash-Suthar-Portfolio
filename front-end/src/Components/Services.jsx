@@ -19,7 +19,7 @@ function Services() {
             </div>
 
             <div className="max-w-xl mx-auto text-center py-20">
-                <p className="font-bold text-xl mb-5">Have any project ideas? Let's discuss.</p>
+                <p className="font-bold text-xl mb-5">Have any project ideas? Let&lsquo;s discuss.</p>
                 <a className="font-semibold text-sm rounded-lg py-2 px-4 hover:text-red-100 bg-moderate text-light" href="">Strat Talking &gt;&gt;</a>
             </div>
         </div>

@@ -25,7 +25,7 @@ function Skills() {
         <div className='py-20 '>
           <div className='text-center mb-20'>
             <p className='font-bold text-3xl'>Skills</p>
-            <p className='text-sm'>where I'm proficient</p>
+            <p className='text-sm'>where I&lsquo;m proficient</p>
           </div>
           <div className="max-w-5xl mx-auto flex md:flex-wrap max-md:flex-col justify-around">
             <SkillsCard heading={cardData.card1.heading} description={cardData.card1.description} techAndTools={cardData.card1.techAndTools} />

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function SkillsCard({heading,description,techAndTools}) {
 
     const TechArray = techAndTools.split(" ");
@@ -16,7 +18,13 @@ function SkillsCard({heading,description,techAndTools}) {
   </ul>
 </div>
 
-  )
+  );
 }
 
+SkillsCard.propTypes = {
+    heading: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    techAndTools: PropTypes.string.isRequired,
+  };
+  
 export default SkillsCard
