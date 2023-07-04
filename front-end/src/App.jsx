@@ -1,9 +1,10 @@
-import React from 'react'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 import Hero from './Components/Hero'
 import About from './Components/About'
 import Contact from './Components/Contact'
+import Skills from './Components/Skills'
+import Services from './Components/Services'
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
       <Navbar/>
       <Hero/>
       <About/>
+      <Skills/>
+      <Services/>
       <Contact/>
       <Footer/>
     </div>
