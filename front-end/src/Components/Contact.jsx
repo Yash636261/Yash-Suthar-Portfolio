@@ -25,17 +25,12 @@ function Contact() {
               >
                 Name
               </label>
-              <div className="flex">
-                <span className="inline-flex items-center px-3 text-sm bg-gray-100  border-gray-300 text-dark placeholder-dark border border-r-0 rounded-l-md ">
-                  @
-                </span>
                 <input
                   type="text"
                   id="website-admin"
-                  className="rounded-none rounded-r-lg bg-gray-100 border border-gray-300 text-dark placeholder-dark focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5  "
+                  className=" rounded-lg bg-gray-100 border border-gray-300 text-dark placeholder-dark focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5  "
                   placeholder="Enter Your Name"
                 />
-              </div>
             </div>
             <div className="mt-5">
               <label
