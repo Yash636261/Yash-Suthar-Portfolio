@@ -1,7 +1,8 @@
 
 function Hero() {
   return (
-    <div className='h-screen mx-auto max-w-6xl'>
+    <div className='bg-dark'>
+    <div className='h-screen mx-auto max-w-6xl '>
       <div className='flex flex-row mx-auto text-light h-full justify-around items-center'>
       {/* bg-[url("../public/background.png")] bg-no-repeat bg-cover bg-blend-darken max-w-7xl bg-gray-600 */}
         <div className='md:text-left text-center my-auto'>
@@ -9,11 +10,19 @@ function Hero() {
             <p className='font-bold text-4xl mb-3 tracking-wide'>&lt;YASH SUTHAR&gt;</p>
             <p className='text-xl mb-10'> Building Bridges between Design, Code,<br></br> and User experience.</p>
             <a href="" className='font-semibold text-lg rounded-lg py-1 px-4 hover:text-red-100 bg-moderate text-light'>Download CV</a>
+            
         </div>
         <div className='my-auto max-md:hidden'>
             <img className='border rounded-xl w-64' src="https://www.pinclipart.com/picdir/middle/155-1559316_male-avatar-clipart.png" alt="profileimage" />
         </div>
+        
     </div>
+                {/* <div className="max-w-xl mx-auto text-center py-20">
+                <p className="font-bold text-xl mb-5">Have any project ideas? Let&lsquo;s discuss.</p>
+                <a className="font-semibold text-sm rounded-lg py-2 px-4 hover:text-red-100 bg-moderate text-light" href="">Strat Talking &gt;&gt;</a>
+            </div> */}
+    </div>
+
     </div>
   )
 }

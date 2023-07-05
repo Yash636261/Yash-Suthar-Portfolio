@@ -1,4 +1,13 @@
+import { useState } from "react";
+
 function Contact() {
+
+  const [Animate , setAnimate]= useState(false);
+
+  const transit=()=>{
+    setAnimate(!Animate);
+  }
+
   return (
     <div className="bg-light text-dark pb-20 min-h-screen">
       <div className="text-center mb-20">
@@ -70,14 +79,14 @@ function Contact() {
                 placeholder="Leave a comment..."
               ></textarea>
 
-              <button className="flex items-center my-5 bg-moderate text-light py-2 px-4 text-sm font-semibold border rounded-md">
+              <button onClick={transit} className="flex items-center my-5 bg-moderate text-light py-2 px-4 text-sm font-semibold border rounded-md hover:shadow-lg">
                 <span className="mr-2">Send</span>
-                <span className="pr-3 transition duration-300  hover:translate-x-3">
+                 <span className={`pr-3 transition duration-1000 hover:translate-x-5`}> {/* ${Animate ? "transition duration-1000 translate-x-96" : ""} */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="h-8 w-8 "
+                  fill="currentcolor"
+                  className="h-6 w-6 y-5"
                 >
                   <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
                 </svg>

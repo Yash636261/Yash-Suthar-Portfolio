@@ -24,7 +24,7 @@ function Skills() {
 
   return (
     <div className="bg-light text-dark px-5">
-      <div className="py-20 ">
+      <div className=" ">
         <div className="text-center mb-20">
           <p className="font-bold text-3xl">Skills</p>
           <p className="text-sm">where I&lsquo;m proficient</p>
