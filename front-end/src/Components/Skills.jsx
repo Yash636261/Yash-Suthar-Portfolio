@@ -1,5 +1,6 @@
 import SkillsCard from "./Cards/SkillsCard";
 
+
 function Skills() {
   const cardData = [
     {

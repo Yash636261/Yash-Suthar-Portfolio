@@ -10,10 +10,10 @@ function Services() {
             </div>
             
             <div className="flex justify-around items-center flex-wrap max-w-2xl mx-auto">
-                <ServiceCards heading="Web Application Development"/>
-                <ServiceCards heading="Responsive Web Design"/>
-                <ServiceCards heading="Bug Fixing and Maintenance"/>
-                <ServiceCards heading="Technical Consultation"/>
+                <ServiceCards service="Web Application Development"/>
+                <ServiceCards service="Responsive Web Design"/>
+                <ServiceCards service="Bug Fixing and Maintenance"/>
+                <ServiceCards service="Technical Consultation"/>
             </div>
 
 
