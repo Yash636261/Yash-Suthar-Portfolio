@@ -1,17 +1,45 @@
 function Footer() {
   return (
     <div className="flex flex-col relative bg-dark p-5 text-light text-sm font-semibold ">
-        <div className="absolute  right-5 top-5">
-          <a href="">
-            <img
-              className="w-10 h-10 bg-white border-0 rounded-full transition duration-800 hover:-translate-y-2"
-              src="https://cdn3.iconfinder.com/data/icons/common-4/24/ui-12-512.png"
-              alt=""
-            />
-          </a>
+      <div className="absolute  right-5 top-5">
+        <a href="">
+          <img
+            className="w-10 h-10 bg-white border-0 rounded-full transition duration-800 hover:-translate-y-2"
+            src="https://cdn3.iconfinder.com/data/icons/common-4/24/ui-12-512.png"
+            alt=""
+          />
+        </a>
+      </div>
+      <div className="md:px-40">
+      <div className="flex flex-row justify-around items-center mt-8">
+        <div>
+          <div className="text-s font-bold">
+            <ul className="mx-2 my-10 h-40 p-2 flex flex-col justify-between text-light">
+              <li className="mr-6">
+                <a className="hover:text-moderate" aria-current="page" href="/">
+                  Home
+                </a>
+              </li>
+              <li className="mr-6">
+                <a className=" hover:text-moderate" href="/entertainment">
+                  About Me
+                </a>
+              </li>
+              <li className="mr-6">
+                <a className=" hover:text-moderate" href="/general">
+                  Portfolio
+                </a>
+              </li>
+              <li className="mr-6">
+                <a className=" hover:text-moderate" href="/technology">
+                  Contact Me
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      <div className="flex flex-row justify-around mt-10">
 
+        <div className="">
         <div className="text-light flex flex-row justify-around md:justify-start fill-slate-300">
           <div className="m-2">
             <a href="https://github.com/Yash636261" alt="github">
@@ -53,10 +81,13 @@ function Footer() {
             </a>
           </div>
         </div>
+        <div className="text-center mb-10">
+          <p className="font-semibold text-lg">Yash Suthar</p>
+        </div>
+        </div>
+
       </div>
 
-      <div className="text-center mb-10">
-        <p className="font-semibold text-lg">Yash Suthar</p>
       </div>
 
       <div className="flex flex-row justify-between">
