@@ -1,13 +1,15 @@
 function Hero() {
   return (
-    <div className="bg-dark">
-      <div className="h-screen mx-auto max-w-6xl ">
-        <div className="flex flex-row mx-auto text-light h-full justify-around items-center">
+    <div className="bg-dark px-5">
+      <div className="relative h-screen mx-auto max-w-5xl ">
+        <div className="absolute bg-pink-400 rounded-full right-0 top-[30vh] w-72 h-72 filter blur-2xl opacity-50 animate-blob"></div>
+        <div className="absolute bg-red-700 rounded-full right-36 top-[30vh] w-72 h-72 filter blur-2xl opacity-50 animate-blob animation-delay-2000"></div>
+        <div className="flex mx-auto text-light h-full justify-center md:justify-between items-center">
           {/* bg-[url("../public/background.png")] bg-no-repeat bg-cover bg-blend-darken max-w-7xl bg-gray-600 */}
-          <div className="md:text-left text-center px-5 my-auto">
+          <div className=" md:text-left text-center px-5 my-auto">
             <p className="text-xl tracking-wider">Hello, my name is</p>
-            <p className="font-bold text-4xl mb-3 tracking-wide">
-              &lt;YASH SUTHAR&gt;
+            <p className="font-bold text-border text-4xl mb-3 tracking-wide">
+              &lt;YASH SUTHAR /&gt;
             </p>
             <p className="text-xl mb-10">
               Building Bridges between Design, Code,<br></br> and User
@@ -15,7 +17,7 @@ function Hero() {
             </p>
             <a
               href=""
-              className="font-semibold text-lg rounded-lg py-1 px-4 hover:text-red-100 bg-moderate text-light"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105"
             >
               Download CV
             </a>
@@ -24,7 +26,7 @@ function Hero() {
               <div className="m-2">
                 <a href="https://github.com/Yash636261" alt="github">
                   <svg
-                    className="h-6 w-6 transition duration-800 hover:-translate-y-1 fill-slate-300 hover:fill-white"
+                    className="h-6 w-6 md:h-8 md:w-8 transition duration-800 hover:-translate-y-1 fill-slate-300 hover:fill-white"
                     xmlns="http://www.w3.org/2000/svg"
                     height="1em"
                     viewBox="0 0 496 512"
@@ -34,9 +36,12 @@ function Hero() {
                 </a>
               </div>
               <div className="m-2">
-                <a href="https://www.linkedin.com/in/yash-suthar-22339124a" alt="linkedin">
+                <a
+                  href="https://www.linkedin.com/in/yash-suthar-22339124a"
+                  alt="linkedin"
+                >
                   <svg
-                    className="h-6 w-6 transition duration-800 hover:-translate-y-1 fill-slate-300 hover:fill-white"
+                    className="h-6 w-6 md:h-8 md:w-8 transition duration-800 hover:-translate-y-1 fill-slate-300 hover:fill-white"
                     xmlns="http://www.w3.org/2000/svg"
                     height="1em"
                     viewBox="0 0 448 512"
@@ -48,7 +53,7 @@ function Hero() {
               <div className="m-2">
                 <a href="https://twitter.com/yash__dev" alt="twitter">
                   <svg
-                    className="h-6 w-6 transition duration-800 hover:-translate-y-1 fill-slate-300 hover:fill-white"
+                    className="h-6 w-6 md:h-8 md:w-8 transition duration-800 hover:-translate-y-1 fill-slate-300 hover:fill-white"
                     xmlns="http://www.w3.org/2000/svg"
                     height="1em"
                     viewBox="0 0 512 512"
@@ -59,13 +64,15 @@ function Hero() {
               </div>
             </div>
           </div>
-          <div className="my-auto max-md:hidden">
+          {/* <div className="absolute right-0 my-auto max-md:hidden  bg-[#FFD700] p-4 border rounded-full h-[600px] w-[600px] -overflow-z-0"> */}
+          <div className=" flex justify-end items-center max-md:hidden">
             <img
-              className="border rounded-xl w-64"
-              src="https://www.pinclipart.com/picdir/middle/155-1559316_male-avatar-clipart.png"
+              className=" border rounded-full w-80 h-80 object-contain z-10"
+              src="https://th.bing.com/th/id/OIP.JAAd31mxF33HqZEgYq9zgAHaHv?pid=ImgDet&rs=1"
               alt="profileimage"
             />
           </div>
+          {/* </div> */}
         </div>
         {/* <div className="max-w-xl mx-auto text-center py-20">
                 <p className="font-bold text-xl mb-5">Have any project ideas? Let&lsquo;s discuss.</p>

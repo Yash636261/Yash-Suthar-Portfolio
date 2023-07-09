@@ -9,8 +9,8 @@ function Navbar() {
 
   return (
     <div className="w-full  fixed  shadow-black text-light bg-dark border border-dark ">
-      <nav className="relative shadow-black z-10">
-        <div className='z-10 flex w-full p-2 border border-transparent rounded-lg shadow-md'>
+      <nav className="relative shadow-black z-20">
+        <div className="z-10 flex w-full p-2 border border-transparent rounded-lg shadow-md">
           <div className="container mx-auto flex justify-end">
             {/* <div className="border-0 p-1 rounded-lg drop-shadow-lg backdrop-blur-sm">
               <a
@@ -20,16 +20,10 @@ function Navbar() {
                 Yash Suthar
               </a>
             </div> */}
-            <div
-              className=" max-md:hidden text-sm font-bold mx-auto"
-            >
-              <ul className="w-full flex mx-2 border-0 p-2 rounded-lg drop-shadow-lg backdrop-blur-sm">
+            <div className=" max-md:hidden text-sm font-bold mx-auto">
+              <ul className="w-full flex mx-2 border-0 p-2 rounded-lg drop-shadow-lg">
                 <li className="mr-6">
-                  <a
-                    className="text-moderate"
-                    aria-current="page"
-                    href="/"
-                  >
+                  <a className="text-moderate" aria-current="page" href="/">
                     Home
                   </a>
                 </li>
@@ -79,38 +73,36 @@ function Navbar() {
 
         <div className=""></div>
 
-          <div className={`transition-transform duration-300 ease-in-out transform ${Toggle ? 'translate-y-1' : '-translate-y-72 shadow-none'} border border-dark md:invisible visible w-64 z-0 rounded-xl absolute left-1/2 transform -translate-x-1/2 bg-dark shadow-black shadow-md`}>
-            <div
-              className=" text-s font-bold mx-auto"
-            >
-              <ul className="flex flex-col mx-2 my-10 z-0 justify-between h-40 border-0 p-2 rounded-lg drop-shadow-lg backdrop-blur-sm text-light">
-                <li className="mr-6">
-                  <a
-                    className="text-moderate"
-                    aria-current="page"
-                    href="/"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li className="mr-6">
-                  <a className=" hover:text-moderate" href="/entertainment">
-                    About Me
-                  </a>
-                </li>
-                <li className="mr-6">
-                  <a className=" hover:text-moderate" href="/general">
-                    Portfolio
-                  </a>
-                </li>
-                <li className="mr-6">
-                  <a className=" hover:text-moderate" href="/technology">
-                    Contact Me
-                  </a>
-                </li>
-              </ul>
-            </div>
+        <div
+          className={`transition-transform duration-300 ease-in-out transform ${
+            Toggle ? "translate-y-1" : "-translate-y-72 shadow-none"
+          } border border-dark md:invisible visible w-64 z-0 rounded-xl absolute left-1/2 transform -translate-x-1/2 bg-dark shadow-black shadow-md`}
+        >
+          <div className=" text-s font-bold mx-auto">
+            <ul className="flex flex-col mx-2 my-10 z-0 justify-between h-40 border-0 p-2 rounded-lg drop-shadow-lg backdrop-blur-sm text-light">
+              <li className="mr-6">
+                <a className="text-moderate" aria-current="page" href="/">
+                  Home
+                </a>
+              </li>
+              <li className="mr-6">
+                <a className=" hover:text-moderate" href="/entertainment">
+                  About Me
+                </a>
+              </li>
+              <li className="mr-6">
+                <a className=" hover:text-moderate" href="/general">
+                  Portfolio
+                </a>
+              </li>
+              <li className="mr-6">
+                <a className=" hover:text-moderate" href="/technology">
+                  Contact Me
+                </a>
+              </li>
+            </ul>
           </div>
+        </div>
       </nav>
     </div>
   );
