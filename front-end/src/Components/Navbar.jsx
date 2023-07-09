@@ -8,8 +8,8 @@ function Navbar() {
   };
 
   return (
-    <div className="w-full  fixed  shadow-black text-light bg-dark border border-dark ">
-      <nav className="relative shadow-black z-20">
+    <div className="w-full fixed shadow-black text-light bg-dark border border-dark z-20">
+      <nav className="relative shadow-black">
         <div className="z-10 flex w-full p-2 border border-transparent rounded-lg shadow-md">
           <div className="container mx-auto flex justify-end">
             {/* <div className="border-0 p-1 rounded-lg drop-shadow-lg backdrop-blur-sm">
@@ -73,10 +73,8 @@ function Navbar() {
 
         <div className=""></div>
 
-        <div
-          className={`transition-transform duration-300 ease-in-out transform ${
-            Toggle ? "translate-y-1" : "-translate-y-72 shadow-none"
-          } border border-dark md:invisible visible w-64 z-0 rounded-xl absolute left-1/2 transform -translate-x-1/2 bg-dark shadow-black shadow-md`}
+        {Toggle && (<div
+          className={`mt-1 overflow-hidden transition-all transition-max-height duration-4000 ease-in-out border-2 border-gray-900 md:invisible visible w-64 rounded-xl absolute left-1/2 transform -translate-x-1/2 bg-dark `}
         >
           <div className=" text-s font-bold mx-auto">
             <ul className="flex flex-col mx-2 my-10 z-0 justify-between h-40 border-0 p-2 rounded-lg drop-shadow-lg backdrop-blur-sm text-light">
@@ -103,6 +101,7 @@ function Navbar() {
             </ul>
           </div>
         </div>
+        )}
       </nav>
     </div>
   );
