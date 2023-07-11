@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 function SkillsCard({ heading, description, techAndTools }) {
-  const TechArray = techAndTools.split(" ");
+  const TechArray = techAndTools;
 
   return (
     <div className="mx-auto my-5 w-64 p-5 border border-gray-400 rounded-lg shadow-md overflow-hidden transition-shadow duration-500 hover:shadow-lg hover:shadow-gray-700 bg-gray-100">

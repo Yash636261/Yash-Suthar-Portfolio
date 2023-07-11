@@ -11,10 +11,10 @@ function Footer() {
         </a>
       </div>
       <div className="md:px-40">
-      <div className="flex flex-row justify-around items-center mt-8">
-        <div>
+      <div className="flex flex-row md:flex-col justify-around items-center mt-8">
+        <div className="">
           <div className="text-s font-bold">
-            <ul className="mx-2 my-10 h-40 p-2 flex flex-col justify-between text-light">
+            <ul className="mx-2 my-10 h-40 md:h-0 p-2 flex flex-col md:flex-row justify-between text-light">
               <li className="mr-6">
                 <a className="hover:text-moderate" aria-current="page" href="/" title="home page">
                   Home
