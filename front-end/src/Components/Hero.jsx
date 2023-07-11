@@ -2,18 +2,23 @@ function Hero() {
   return (
     <div className="bg-dark px-5">
       <div className="relative h-screen mx-auto max-w-5xl ">
-        <div className="absolute bg-pink-400 rounded-full right-0 top-[30vh] w-72 h-72 filter blur-2xl opacity-50 animate-blob"></div>
-        <div className="absolute bg-red-700 rounded-full right-36 top-[30vh] w-72 h-72 filter blur-2xl opacity-50 animate-blob animation-delay-2000"></div>
+        <div className="absolute max-md:invisible bg-pink-400 rounded-full right-0 top-[30vh] w-72 h-72 filter blur-2xl opacity-50 animate-blob"></div>
+        <div className="absolute max-md:invisible bg-red-700 rounded-full right-36 top-[30vh] w-72 h-72 filter blur-2xl opacity-50 animate-blob animation-delay-2000"></div>
         <div className="flex mx-auto text-light h-full justify-center md:justify-between items-center">
           {/* bg-[url("../public/background.png")] bg-no-repeat bg-cover bg-blend-darken max-w-7xl bg-gray-600 */}
           <div className=" md:text-left text-center px-5 my-auto">
+
+            {/* introduction */}
+
             <p className="text-xl tracking-wider">Hello, my name is</p>
             <p className="font-bold text-border text-4xl mb-3 tracking-wide">
               &lt;YASH SUTHAR /&gt;
             </p>
             <p className="text-xl mb-10">
-              Building Bridges between Design, Code,<br></br> and User
-              experience.
+              {/* Building Bridges between Design, Code,<br></br> and User
+              experience. */}
+              Creating innovative web solutions from <br></br>
+              end to end.
             </p>
             <a
               href=""
@@ -21,6 +26,8 @@ function Hero() {
             >
               Download CV
             </a>
+
+            {/* Links to social media */}
 
             <div className="text-light flex flex-row justify-around md:justify-start fill-slate-300 mt-10">
               <div className="m-2">
@@ -64,7 +71,9 @@ function Hero() {
               </div>
             </div>
           </div>
-          {/* <div className="absolute right-0 my-auto max-md:hidden  bg-[#FFD700] p-4 border rounded-full h-[600px] w-[600px] -overflow-z-0"> */}
+
+          {/* Profile Picture in hero */}
+
           <div className=" flex justify-end items-center max-md:hidden">
             <img
               className=" border rounded-full w-80 h-80 object-contain z-10"

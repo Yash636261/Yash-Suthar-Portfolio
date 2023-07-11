@@ -21,17 +21,17 @@ function Footer() {
                 </a>
               </li>
               <li className="mr-6">
-                <a className=" hover:text-moderate" href="/entertainment">
+                <a className=" hover:text-moderate" href="/">
                   About Me
                 </a>
               </li>
               <li className="mr-6">
-                <a className=" hover:text-moderate" href="/general">
+                <a className=" hover:text-moderate" href="/">
                   Portfolio
                 </a>
               </li>
               <li className="mr-6">
-                <a className=" hover:text-moderate" href="/technology">
+                <a className=" hover:text-moderate" href="/">
                   Contact Me
                 </a>
               </li>
@@ -92,7 +92,7 @@ function Footer() {
 
       <div className="flex flex-row justify-between">
         <p className="font-bold"> &lt;/&gt;</p>
-        <p className=""> © 2022 All Rights Reserved </p>
+        <p className=""> © 2023 All Rights Reserved </p>
       </div>
 
       <div>

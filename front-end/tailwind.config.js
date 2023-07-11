@@ -10,7 +10,6 @@ export default {
       },
       animation: {
         blob: "blob 9s infinite",
-        load: "9s ease-in-out"
       },
       keyframes: {
         blob: {
