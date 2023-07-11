@@ -2,7 +2,7 @@ function Footer() {
   return (
     <div className="flex flex-col relative bg-dark p-5 text-light text-sm font-semibold ">
       <div className="absolute  right-5 top-5">
-        <a href="">
+        <a href=""  title="go to top">
           <img
             className="w-10 h-10 bg-white border-0 rounded-full transition duration-800 hover:-translate-y-2"
             src="https://cdn3.iconfinder.com/data/icons/common-4/24/ui-12-512.png"
@@ -16,22 +16,22 @@ function Footer() {
           <div className="text-s font-bold">
             <ul className="mx-2 my-10 h-40 p-2 flex flex-col justify-between text-light">
               <li className="mr-6">
-                <a className="hover:text-moderate" aria-current="page" href="/">
+                <a className="hover:text-moderate" aria-current="page" href="/" title="home page">
                   Home
                 </a>
               </li>
               <li className="mr-6">
-                <a className=" hover:text-moderate" href="/">
+                <a className=" hover:text-moderate" href="/" title="about me">
                   About Me
                 </a>
               </li>
               <li className="mr-6">
-                <a className=" hover:text-moderate" href="/">
+                <a className=" hover:text-moderate" href="/" title="portfolio">
                   Portfolio
                 </a>
               </li>
               <li className="mr-6">
-                <a className=" hover:text-moderate" href="/">
+                <a className=" hover:text-moderate" href="/" title="contact page">
                   Contact Me
                 </a>
               </li>
@@ -42,7 +42,7 @@ function Footer() {
         <div className="">
         <div className="text-light flex flex-row justify-around md:justify-start fill-slate-300">
           <div className="m-2">
-            <a href="https://github.com/Yash636261" alt="github">
+            <a href="https://github.com/Yash636261" title="github" alt="github">
               <svg
                 className="h-6 w-6 transition duration-800 hover:-translate-y-1 fill-slate-300 hover:fill-moderate"
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ function Footer() {
           <div className="m-2">
             <a
               href="https://www.linkedin.com/in/yash-suthar-22339124a"
-              alt="linkedin"
+              alt="linkedin" title="linkedIN"
             >
               <svg
                 className="h-6 w-6 transition duration-800 hover:-translate-y-1 fill-slate-300 hover:fill-moderate"
@@ -69,7 +69,7 @@ function Footer() {
             </a>
           </div>
           <div className="m-2">
-            <a href="https://twitter.com/yash__dev" alt="twitter">
+            <a href="https://twitter.com/yash__dev" title="twitter" alt="twitter">
               <svg
                 className="h-6 w-6 transition duration-800 hover:-translate-y-1 fill-slate-300 hover:fill-moderate"
                 xmlns="http://www.w3.org/2000/svg"
@@ -93,16 +93,6 @@ function Footer() {
       <div className="flex flex-row justify-between">
         <p className="font-bold"> &lt;/&gt;</p>
         <p className=""> © 2023 All Rights Reserved </p>
-      </div>
-
-      <div>
-        <ul>
-          <li>
-            <a href="">
-              <img src="" alt="" />
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
   );

@@ -23,22 +23,22 @@ function Navbar() {
             <div className=" max-md:hidden text-sm font-bold mx-auto">
               <ul className="w-full flex mx-2 border-0 p-2 rounded-lg drop-shadow-lg">
                 <li className="mr-6">
-                  <a className="text-moderate" aria-current="page" href="/">
+                  <a className="text-moderate" title="home page" aria-current="page" href="/">
                     Home
                   </a>
                 </li>
                 <li className="mr-6">
-                  <a className=" hover:text-moderate" href="/About">
+                  <a className=" hover:text-moderate" title="about me" href="/About">
                     About Me
                   </a>
                 </li>
                 <li className="mr-6">
-                  <a className=" hover:text-moderate" href="/Portfolio">
+                  <a className=" hover:text-moderate" title="portfolio" href="/Portfolio">
                     Portfolio
                   </a>
                 </li>
                 <li className="mr-6">
-                  <a className=" hover:text-moderate" href="/Contact">
+                  <a className=" hover:text-moderate" title="contact page" href="/Contact">
                     Contact Me
                   </a>
                 </li>

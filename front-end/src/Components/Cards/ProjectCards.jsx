@@ -5,7 +5,7 @@ function ProjectCards({ image, heading, description }) {
   return (
     <div>
       <div className="w-64 m-4 border border-gray-200 rounded-lg shadow ">
-        <a href="#">
+        <a href="#"  title="project image">
           <img className="rounded-t-lg object-contain" src={image} alt="" />
         </a>
         <div className="p-5">
@@ -14,7 +14,7 @@ function ProjectCards({ image, heading, description }) {
         
         <div className=" flex flex-row">
           <div className="flex font-bold mt-1">
-            <a href="" className="flex items-center my-5 bg-[#28a745] text-light py-2 px-4 text-sm font-semibold border rounded-md hover:shadow-lg">
+            <a href="" title="github" className="flex items-center my-5 bg-[#28a745] text-light py-2 px-4 text-sm font-semibold border rounded-md hover:shadow-lg">
               <span className="mr-2">GitHub</span>
               <span
                 className={` transition duration-500 hover:translate-x-2`}
@@ -33,7 +33,7 @@ function ProjectCards({ image, heading, description }) {
           </div>
           <div className="flex font-bold mt-1 mx-auto">
 
-            <a href="" className="flex items-center my-5  bg-moderate text-light py-2 px-4 text-sm font-semibold border rounded-md hover:shadow-lg">
+            <a href=""  title="live link" className="flex items-center my-5  bg-moderate text-light py-2 px-4 text-sm font-semibold border rounded-md hover:shadow-lg">
               <span className="mr-2">Live</span>
               <span
                 className={` transition duration-500 hover:translate-x-2`}

@@ -31,7 +31,7 @@ function Hero() {
 
             <div className="text-light flex flex-row justify-around md:justify-start fill-slate-300 mt-10">
               <div className="m-2">
-                <a href="https://github.com/Yash636261" alt="github">
+                <a href="https://github.com/Yash636261"  title="github" alt="github">
                   <svg
                     className="h-6 w-6 md:h-8 md:w-8 transition duration-800 hover:-translate-y-1 fill-slate-300 hover:fill-white"
                     xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ function Hero() {
               <div className="m-2">
                 <a
                   href="https://www.linkedin.com/in/yash-suthar-22339124a"
-                  alt="linkedin"
+                  alt="linkedin" title="linkedIN"
                 >
                   <svg
                     className="h-6 w-6 md:h-8 md:w-8 transition duration-800 hover:-translate-y-1 fill-slate-300 hover:fill-white"
@@ -58,7 +58,7 @@ function Hero() {
                 </a>
               </div>
               <div className="m-2">
-                <a href="https://twitter.com/yash__dev" alt="twitter">
+                <a href="https://twitter.com/yash__dev" title="twitter" alt="twitter">
                   <svg
                     className="h-6 w-6 md:h-8 md:w-8 transition duration-800 hover:-translate-y-1 fill-slate-300 hover:fill-white"
                     xmlns="http://www.w3.org/2000/svg"

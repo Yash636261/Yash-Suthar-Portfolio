@@ -4,9 +4,9 @@ function About() {
   return (
     <div className='relative bg-light text-dark py-24 px-10'>
         
-        <div className="absolute max-md:invisible bg-red-400 rounded-full right-36 top-[30vh] w-72 h-72 filter blur-2xl opacity-50 animate-blob mix-blend-multiply "></div>
-        <div className="absolute max-md:invisible bg-blue-700 rounded-full right-72 top-[30vh] w-72 h-72 filter blur-2xl opacity-50 animate-blob mix-blend-multiply animation-delay-2000"></div>
-        <div className="absolute max-md:invisible bg-green-700 rounded-full right-56 top-[40vh] w-72 h-72 filter blur-2xl opacity-50 animate-blob mix-blend-multiply animation-delay-4000"></div>
+        <div className="absolute max-md:invisible bg-red-400 rounded-full right-36 top-[30vh] w-72 h-72 filter blur-2xl opacity-30 animate-blob mix-blend-multiply "></div>
+        <div className="absolute max-md:invisible bg-blue-700 rounded-full right-72 top-[30vh] w-72 h-72 filter blur-2xl opacity-30 animate-blob mix-blend-multiply animation-delay-2000"></div>
+        <div className="absolute max-md:invisible bg-green-700 rounded-full right-56 top-[40vh] w-72 h-72 filter blur-2xl opacity-30 animate-blob mix-blend-multiply animation-delay-4000"></div>
         <div className='text-center mb-20'>
             <p className='font-bold text-3xl'>About</p>
             <p className='text-sm'>My introduction</p>
