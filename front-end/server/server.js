@@ -2,11 +2,13 @@
 // eslint-disable-next-line no-undef
 const express = require("express");
 const app = express();
+require("dotenv").config();
+
 
 app.use(express.json());
 
-app.post('/', (req, res) => {
-  const ans = req.body; // Access request body using req.body instead of req.params()
+app.post('/', async (req, res) => {
+  const ans = await req.body; // Access request body using req.body instead of req.params()
   res.json({ ans }); // Use res.json() instead of res.send.json()
 });
 
