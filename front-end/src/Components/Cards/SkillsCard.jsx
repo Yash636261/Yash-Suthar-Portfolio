@@ -24,7 +24,7 @@ function SkillsCard({ heading, description, techAndTools }) {
 SkillsCard.propTypes = {
   heading: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  techAndTools: PropTypes.string.isRequired,
+  techAndTools: PropTypes.array.isRequired,
 };
 
 export default SkillsCard;
