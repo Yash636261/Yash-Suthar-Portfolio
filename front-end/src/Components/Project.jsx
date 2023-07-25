@@ -5,26 +5,32 @@ function Project() {
   const cardData = [
     {
       image:
-        "https://blog.hubbado.com/content/images/2020/01/projectmanager.png",
-      heading: "Front-end",
+        "https://th.bing.com/th/id/R.bb81017ace8cbaed9fcbb88cf2280cba?rik=ynMEw4fmarRg6A&riu=http%3a%2f%2fwww.designlab.net.au%2fwp-content%2fuploads%2fproject-manager-roll.jpg&ehk=z2LJ5lHVsEqDlj%2bhovdvyWlj8QRIqvGLVZ0%2btxmjEOU%3d&risl=&pid=ImgRaw&r=0",
+      heading: "BookBuddy",
       description:
-        "Creating intuitive, responsive, and visually appealing user interfaces and experiences.",
+        "BookBuddy is a versatile library management system that caters to both students and authors. It offers an intuitive interface for easy book search by title, author, or genre. Users can borrow books through BookBuddy and conveniently check the due dates and details of borrowed books. With BookBuddy, managing library transactions and accessing book.",
+      github: "https://github.com/Yash636261/BookBuddy",
+      link: "glittery-raindrop-63e8eb.netlify.app/",
     },
     {
       image:
-        "https://blog.hubbado.com/content/images/2020/01/projectmanager.png",
+        "",
 
-      heading: "Back-end",
+      heading: "NewsHub",
       description:
-        "Designing and developing scalable, efficient, and secure server-side applications.",
+        "NewsHub is a news app created using React.js and TailwindCss to provide latest news category wise to users.",
+      github: "https://github.com/Yash636261/NewsHub",
+      link: "",
     },
     {
       image:
-        "https://blog.hubbado.com/content/images/2020/01/projectmanager.png",
+        "https://efc.web.unc.edu/wp-content/uploads/sites/2607/2016/05/project-management-copy.png",
 
       heading: "Database",
       description:
         "Managing, organizing, and optimizing databases for efficient data storage and retrieval.",
+      github: "",
+      link: "",
     },
   ];
   return (
@@ -36,12 +42,14 @@ function Project() {
         </div>
 
         <div className="flex justify-around items-center flex-wrap max-w-4xl mx-auto">
-          {cardData.map(({ image, heading, description }) => (
+          {cardData.map(({ image, heading, description,github , link }) => (
             <ProjectCards
             key={heading}
               image={image}
               heading={heading}
               description={description}
+              github={github}
+              link={link}
             />
           ))}
         </div>
