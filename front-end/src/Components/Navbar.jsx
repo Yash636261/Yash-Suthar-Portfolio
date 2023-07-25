@@ -10,17 +10,12 @@ function Navbar() {
 
   return (
     <div className="w-full fixed shadow-black text-light bg-dark border border-dark z-20">
-      <nav className="relative shadow-black">
+      <nav>
         <div className="z-10 flex w-full p-2 border border-transparent rounded-lg shadow-md">
-          <div className="container mx-auto flex justify-end">
-            {/* <div className="border-0 p-1 rounded-lg drop-shadow-lg backdrop-blur-sm">
-              <a
-                className=" text-light hover:text-blue-200 text-2xl font-bold"
-                href="/general"
-              >
-                Yash Suthar
-              </a>
-            </div> */}
+          <div className="container mx-auto flex justify-between">
+            <div className="my-auto">
+              <p className="font-bold text-lg cursor-default">｛ Yash Suthar ｝</p>
+            </div>
             <div className=" max-md:hidden text-sm font-bold mx-auto">
               <ul className="w-full flex mx-2 border-0 p-2 rounded-lg drop-shadow-lg ">
                 <li className="mr-6 cursor-pointer">
