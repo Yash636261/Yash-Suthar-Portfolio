@@ -13,25 +13,25 @@ This is my personal portfolio website, showcasing a seamless blend of artistry a
 
 ## Setup and Installation
 1. Clone the repository using the command:
-   git clone https://github.com/your-username/your-portfolio.git
+   <pre><code>git clone https://github.com/your-username/your-portfolio.git</pre></code>
 
 2. Navigate to the project directory:
-cd front-end
+<pre><code>cd front-end</pre></code>
 
 3. Install the required dependencies using npm:
-npm install
+<pre><code>npm install</pre></code>
 
 4. Start the front-end:
-npm run dev
+<pre><code>npm run dev</pre></code>
 
 5. Navigate to server
-cd server
+<pre><code>cd server</pre></code>
 
 6. Install the required dependencies using npm:
-npm install
+<pre><code>npm install</pre></code>
 
 7. Start the development server:
-npm run server
+<pre><code>npm run server</pre></code>
 
 8. website will be accessible at http://localhost:3000.
 
