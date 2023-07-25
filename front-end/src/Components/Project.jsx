@@ -1,4 +1,5 @@
 import ProjectCards from "./Cards/ProjectCards";
+import { Element } from 'react-scroll'
 
 function Project() {
   const cardData = [
@@ -27,7 +28,7 @@ function Project() {
     },
   ];
   return (
-    <div className="bg-light text-dark py-24">
+    <Element id="project-section" className="bg-light text-dark py-24">
       <div>
         <div className="text-center mb-20">
           <p className="font-bold text-3xl">Projects</p>
@@ -45,7 +46,7 @@ function Project() {
           ))}
         </div>
       </div>
-    </div>
+    </Element>
   );
 }
 

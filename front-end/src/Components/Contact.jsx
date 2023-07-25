@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { Element } from 'react-scroll'
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -24,7 +25,7 @@ function Contact() {
 
     try {
       // Send the form data to the server using Axios
-      const response = await axios.post("http://localhost:4000/", formData);
+      const response = await axios.post("http://localhost:4000/api/formData", formData);
       console.log("Server Response:", response.data);
 
       // Optionally, handle any further actions after successful form submission
@@ -39,10 +40,10 @@ function Contact() {
   
     } catch (error) {
       console.log(error);
-    }
+    }   
   };
   return (
-    <div className="bg-light text-dark pb-20 min-h-screen">
+    <Element id="contact-section" className="bg-light text-dark pb-20 min-h-screen">
       <div className="text-center mb-20">
         <p className="font-bold text-3xl">Get In Touch</p>
         <p className="text-sm">Contact Me</p>
@@ -179,7 +180,7 @@ function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </Element>
   );
 }
 

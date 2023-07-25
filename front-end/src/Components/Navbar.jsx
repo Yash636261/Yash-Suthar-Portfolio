@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link,  animateScroll as scroll } from 'react-scroll';
 
 function Navbar() {
   const [Toggle, setToggle] = useState(false);
@@ -21,26 +22,42 @@ function Navbar() {
               </a>
             </div> */}
             <div className=" max-md:hidden text-sm font-bold mx-auto">
-              <ul className="w-full flex mx-2 border-0 p-2 rounded-lg drop-shadow-lg">
-                <li className="mr-6">
-                  <a className="text-moderate" title="home page" aria-current="page" href="/">
+              <ul className="w-full flex mx-2 border-0 p-2 rounded-lg drop-shadow-lg ">
+                <li className="mr-6 cursor-pointer">
+                  <Link className="text-moderate" title="home page" aria-current="page" to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}>
                     Home
-                  </a>
+                  </Link>
                 </li>
-                <li className="mr-6">
-                  <a className=" hover:text-moderate" title="about me" href="/About">
+                <li className="mr-6 cursor-pointer">
+                  <Link className=" hover:text-moderate" title="about me" to="about-section"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}>
                     About Me
-                  </a>
+                  </Link>
                 </li>
-                <li className="mr-6">
-                  <a className=" hover:text-moderate" title="portfolio" href="/Portfolio">
+                <li className="mr-6 cursor-pointer">
+                  <Link className=" hover:text-moderate" title="portfolio"  to="project-section"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}>
                     Portfolio
-                  </a>
+                  </Link>
                 </li>
-                <li className="mr-6">
-                  <a className=" hover:text-moderate" title="contact page" href="/Contact">
+                <li className="mr-6 cursor-pointer">
+                  <Link className=" hover:text-moderate" title="contact page"  to="contact-section"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}>
                     Contact Me
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

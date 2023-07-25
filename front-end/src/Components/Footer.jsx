@@ -1,40 +1,63 @@
+import { animateScroll, Link,  animateScroll as scroll  } from "react-scroll";
+
+const scrollToTop = () =>{
+
+  animateScroll.scrollToTop({
+    duration: 500,
+    smooth: 'easeINOutQuart',
+  })
+}
+
 function Footer() {
   return (
     <div className="flex flex-col relative bg-dark p-5 text-light text-sm font-semibold ">
       <div className="absolute  right-5 top-5">
-        <a href=""  title="go to top">
+        <button onClick={scrollToTop}  title="go to top">
           <img
             className="w-10 h-10 bg-white border-0 rounded-full transition duration-800 hover:-translate-y-2"
             src="https://cdn3.iconfinder.com/data/icons/common-4/24/ui-12-512.png"
             alt=""
           />
-        </a>
+        </button>
       </div>
       <div className="md:px-40">
       <div className="flex flex-row md:flex-col justify-around items-center mt-8">
         <div className="">
           <div className="text-s font-bold">
             <ul className="mx-2 my-10 h-40 md:h-0 p-2 flex flex-col md:flex-row justify-between text-light">
-              <li className="mr-6">
+              <Link className="mr-6" to="home"
+               spy={true}
+               smooth={true}
+               offset={-70}
+               duration={500}>
                 <a className="hover:text-moderate" aria-current="page" href="/" title="home page">
                   Home
                 </a>
-              </li>
-              <li className="mr-6">
+              </Link>
+              <Link className="mr-6" to="about-section" spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}>
                 <a className=" hover:text-moderate" href="/" title="about me">
                   About Me
                 </a>
-              </li>
-              <li className="mr-6">
+              </Link>
+              <Link className="mr-6" to="project-section" spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}>
                 <a className=" hover:text-moderate" href="/" title="portfolio">
                   Portfolio
                 </a>
-              </li>
-              <li className="mr-6">
+              </Link>
+              <Link className="mr-6" to="contact-section" spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}>
                 <a className=" hover:text-moderate" href="/" title="contact page">
                   Contact Me
                 </a>
-              </li>
+              </Link>
             </ul>
           </div>
         </div>

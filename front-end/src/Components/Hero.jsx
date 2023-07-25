@@ -1,6 +1,8 @@
+import { Element } from "react-scroll";
+
 function Hero() {
   return (
-    <div className="bg-dark px-5">
+    <Element id="home" className="bg-dark px-5">
       <div className="relative h-screen mx-auto max-w-5xl ">
         <div className="absolute max-md:invisible bg-pink-400 rounded-full right-0 top-[30vh] w-72 h-72 filter blur-2xl opacity-50 animate-blob"></div>
         <div className="absolute max-md:invisible bg-red-700 rounded-full right-36 top-[30vh] w-72 h-72 filter blur-2xl opacity-50 animate-blob animation-delay-2000"></div>
@@ -29,7 +31,7 @@ function Hero() {
 
             {/* Links to social media */}
 
-            <div className="text-light flex flex-row justify-around md:justify-start fill-slate-300 mt-10">
+            <div className="text-light flex flex-row justify-start max-md:justify-center fill-slate-300 mt-10">
               <div className="m-2">
                 <a href="https://github.com/Yash636261"  title="github" alt="github">
                   <svg
@@ -88,7 +90,7 @@ function Hero() {
                 <a className="font-semibold text-sm rounded-lg py-2 px-4 hover:text-red-100 bg-moderate text-light" href="">Strat Talking &gt;&gt;</a>
             </div> */}
       </div>
-    </div>
+    </Element>
   );
 }
 
