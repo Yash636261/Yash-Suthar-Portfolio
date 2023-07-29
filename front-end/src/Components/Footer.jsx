@@ -1,13 +1,13 @@
 
-import { Link, animateScroll as scroll } from 'react-scroll/modules';
+import { Link, animateScroll } from 'react-scroll/modules';
 
-const scrollToTop = () =>{
 
+const scrollToTop = () => {
   animateScroll.scrollToTop({
     duration: 500,
-    smooth: 'easeINOutQuart',
-  })
-}
+    smooth: 'easeInOutQuart',
+  });
+};
 
 function Footer() {
   return (
