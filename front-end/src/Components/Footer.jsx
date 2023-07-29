@@ -24,41 +24,33 @@ function Footer() {
       <div className="flex flex-row md:flex-col justify-around items-center mt-8">
         <div className="">
           <div className="text-s font-bold">
-            <ul className="mx-2 my-10 h-40 md:h-0 p-2 flex flex-col md:flex-row justify-between text-light">
-              <Link className="mr-6" to="home"
+            <div className="mx-2 my-10 h-40 md:h-0 p-2 flex flex-col md:flex-row justify-between text-light">
+              <Link className="mr-6 hover:text-moderate" to="home"
                spy={true}
                smooth={true}
                offset={-70}
                duration={500}>
-                <a className="hover:text-moderate" aria-current="page" href="/" title="home page">
                   Home
-                </a>
               </Link>
-              <Link className="mr-6" to="about-section" spy={true}
+              <Link className="mr-6 hover:text-moderate" to="about-section" spy={true}
                   smooth={true}
                   offset={-70}
-                  duration={500}>
-                <a className=" hover:text-moderate" href="/" title="about me">
+                  duration={500}>                 
                   About Me
-                </a>
               </Link>
-              <Link className="mr-6" to="project-section" spy={true}
+              <Link className="mr-6 hover:text-moderate" to="project-section" spy={true}
                   smooth={true}
                   offset={-70}
                   duration={500}>
-                <a className=" hover:text-moderate" href="/" title="portfolio">
                   Portfolio
-                </a>
               </Link>
-              <Link className="mr-6" to="contact-section" spy={true}
+              <Link className="mr-6 hover:text-moderate" to="contact-section" spy={true}
                   smooth={true}
                   offset={-70}
                   duration={500}>
-                <a className=" hover:text-moderate" href="/" title="contact page">
                   Contact Me
-                </a>
               </Link>
-            </ul>
+            </div>
           </div>
         </div>
 

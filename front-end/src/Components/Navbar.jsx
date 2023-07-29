@@ -89,26 +89,42 @@ function Navbar() {
           className={`mt-1 overflow-hidden transition-all transition-max-height duration-4000 ease-in-out border-2 border-gray-900 md:invisible visible w-64 rounded-xl absolute left-1/2 transform -translate-x-1/2 bg-dark `}
         >
           <div className=" text-s font-bold mx-auto">
-            <ul className="flex flex-col mx-2 my-10 z-0 justify-between h-40 border-0 p-2 rounded-lg drop-shadow-lg backdrop-blur-sm text-light">
+            <ul className="flex flex-col mx-2 my-10 z-0 justify-between h-40 border-0 p-2 rounded-lg text-light">
               <li className="mr-6">
-                <a className="text-moderate" aria-current="page" href="/">
+                <Link className=" hover:text-moderate" title="portfolio"  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}>
                   Home
-                </a>
+                </Link>
               </li>
               <li className="mr-6">
-                <a className=" hover:text-moderate" href="/entertainment">
+                <Link className=" hover:text-moderate" title="portfolio"  to="about-section"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}>
                   About Me
-                </a>
+                </Link>
               </li>
               <li className="mr-6">
-                <a className=" hover:text-moderate" href="/general">
+                <Link className=" hover:text-moderate" title="portfolio"  to="project-section"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}>
                   Portfolio
-                </a>
+                </Link>
               </li>
               <li className="mr-6">
-                <a className=" hover:text-moderate" href="/technology">
+                <Link className=" hover:text-moderate" title="portfolio"  to="contact-section"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}>
                   Contact Me
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

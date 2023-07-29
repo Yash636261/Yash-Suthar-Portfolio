@@ -19,7 +19,7 @@ function Skills() {
       heading: "Database",
       description:
         "Managing, organizing, and optimizing databases for efficient data storage and retrieval.",
-      techAndTools: ['MySQL' ,'MongoDB'],
+      techAndTools: ['MongoDB'],
     },
   ];
 
