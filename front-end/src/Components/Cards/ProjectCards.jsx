@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 function ProjectCards({ image, heading, description, github, link }) {
-  const updatedDesc = description.split(" ").slice(0, 13).join(" ");
+  const updatedDesc = description.split(" ").slice(0, 10).join(" ");
   return (
     <div>
       <div className=" w-64 m-4 bg-gray-100 border border-gray-200 rounded-lg shadow transition duration-200 hover:scale-105">

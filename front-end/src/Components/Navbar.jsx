@@ -10,7 +10,7 @@ function Navbar() {
   };
 
   return (
-    <div className="w-full fixed shadow-black text-light bg-dark border border-dark z-20">
+    <div className="fixed w-screen shadow-black text-light bg-dark border border-dark z-20">
       <nav>
         <div className="z-10 flex w-full p-2 border border-transparent rounded-lg shadow-md">
           <div className="container mx-auto flex justify-between">
