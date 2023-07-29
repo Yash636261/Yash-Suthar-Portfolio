@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Element } from 'react-scroll'
+import { Element } from 'react-scroll/modules'
 
 
 function About() {

@@ -1,5 +1,5 @@
 import ProjectCards from "./Cards/ProjectCards";
-import { Element } from 'react-scroll'
+import { Element } from 'react-scroll/modules';
 
 function Project() {
   const cardData = [

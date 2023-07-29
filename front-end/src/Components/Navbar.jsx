@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Link} from 'react-scroll';
+import { Link, animateScroll as scroll } from 'react-scroll/modules';
+
 
 function Navbar() {
   const [Toggle, setToggle] = useState(false);

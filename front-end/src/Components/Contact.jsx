@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import { Element } from 'react-scroll'
+import { Element } from 'react-scroll/modules'
 
 function Contact() {
   const [formData, setFormData] = useState({

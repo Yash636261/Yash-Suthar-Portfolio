@@ -1,4 +1,5 @@
-import { animateScroll, Link } from "react-scroll";
+
+import { Link, animateScroll as scroll } from 'react-scroll/modules';
 
 const scrollToTop = () =>{
 
