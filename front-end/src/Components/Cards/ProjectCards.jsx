@@ -5,9 +5,9 @@ function ProjectCards({ image, heading, description, github, link }) {
   return (
     <div>
       <div className=" w-64 m-4 bg-gray-100 border border-gray-200 rounded-lg shadow transition duration-200 hover:scale-105">
-        <a href="#" title="project image" className="bg-gray-800">
+        <div title="project image" className="bg-gray-800 border-0 rounded-t-lg">
           <img className="rounded-t-lg object-cover h-48 mx-auto my-auto" src={!image? "https://blog.hubbado.com/content/images/2020/01/projectmanager.png": image} alt="image not available" />
-        </a>
+        </div>
           <div className="flex flex-col justify-between h-40 px-5 py-2">
             <div>
             <h5 className=" text-2xl font-bold tracking-tight">{heading}</h5>

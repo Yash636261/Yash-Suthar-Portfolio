@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Link} from 'react-scroll/modules';
-
+import { Link } from "react-scroll/modules";
 
 function Navbar() {
   const [Toggle, setToggle] = useState(false);
@@ -10,48 +9,67 @@ function Navbar() {
   };
 
   return (
-    <div className="fixed w-screen shadow-gray-900 shadow-md text-dark bg-gradient-to-r from-rose-700 to-blue-600 border border-dark z-20 bg-dark">
-      <nav>
+    <nav>
+      <div className="fixed w-screen shadow-gray-900 shadow-md text-white bg-gradient-to-r from-rose-700 to-blue-600 border-0 z-20 bg-dark">
         <div className="z-10 flex w-full p-1 border border-transparent rounded-lg shadow-md">
           <div className="container mx-auto flex justify-between">
             <div className="my-auto">
-              <p className="font-bold text-lg cursor-default">｛ Yash Suthar ｝</p>
+              <p className="font-bold text-lg cursor-default">
+                ｛ Yash Suthar ｝
+              </p>
             </div>
-            <div className=" max-md:hidden text-md font-semibold mx-auto">
+            <div className=" max-md:hidden text-md font-bold mx-auto">
               <ul className="w-full flex mx-2 border-0 p-2 rounded-lg drop-shadow-lg text-gray-400">
                 <li className="mr-6 cursor-pointer">
-                  <Link className="text-light" title="home page" aria-current="page" to="home"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}>
+                  <Link
+                    className="text-light"
+                    title="home page"
+                    aria-current="page"
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
                     Home
                   </Link>
                 </li>
                 <li className="mr-6 cursor-pointer">
-                  <Link className=" hover:text-light" title="about me" to="about-section"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}>
+                  <Link
+                    className=" hover:text-light"
+                    title="about me"
+                    to="about-section"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
                     About Me
                   </Link>
                 </li>
                 <li className="mr-6 cursor-pointer">
-                  <Link className=" hover:text-light" title="portfolio"  to="project-section"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}>
+                  <Link
+                    className=" hover:text-light"
+                    title="portfolio"
+                    to="project-section"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
                     Portfolio
                   </Link>
                 </li>
                 <li className="mr-6 cursor-pointer">
-                  <Link className=" hover:text-light" title="contact page"  to="contact-section"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}>
+                  <Link
+                    className=" hover:text-light"
+                    title="contact page"
+                    to="contact-section"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
                     Contact Me
                   </Link>
                 </li>
@@ -86,53 +104,70 @@ function Navbar() {
 
         <div className=""></div>
 
-        {Toggle && (<div
-          className={`mt-1 overflow-hidden transition-all transition-max-height duration-4000 ease-in-out border-2 border-gray-900 md:invisible visible w-64 rounded-xl absolute left-1/2 transform -translate-x-1/2 bg-gradient-to-bl from-slate-800 to-gray-700`}
-        >
-          <div className=" text-s font-bold mx-auto">
-            <ul className="flex flex-col mx-2 my-10 z-0 justify-between h-40 border-0 p-2 rounded-lg text-light">
-              <li className="mr-6">
-                <Link className=" hover:text-moderate" title="portfolio"  to="home"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}>
-                  Home
-                </Link>
-              </li>
-              <li className="mr-6">
-                <Link className=" hover:text-moderate" title="portfolio"  to="about-section"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}>
-                  About Me
-                </Link>
-              </li>
-              <li className="mr-6">
-                <Link className=" hover:text-moderate" title="portfolio"  to="project-section"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}>
-                  Portfolio
-                </Link>
-              </li>
-              <li className="mr-6">
-                <Link className=" hover:text-moderate" title="portfolio"  to="contact-section"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}>
-                  Contact Me
-                </Link>
-              </li>
-            </ul>
+        {Toggle && (
+          <div
+            className={`mt-1 overflow-hidden transition-all transition-max-height duration-4000 ease-in-out border-2 border-gray-900 md:invisible visible w-64 rounded-xl absolute left-1/2 transform -translate-x-1/2 bg-gradient-to-bl from-slate-800 to-gray-700`}
+          >
+            <div className=" text-s font-bold mx-auto">
+              <ul className="flex flex-col mx-2 my-10 z-0 justify-between h-40 border-0 p-2 rounded-lg text-light">
+                <li className="mr-6">
+                  <Link
+                    className=" hover:text-moderate"
+                    title="portfolio"
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li className="mr-6">
+                  <Link
+                    className=" hover:text-moderate"
+                    title="portfolio"
+                    to="about-section"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    About Me
+                  </Link>
+                </li>
+                <li className="mr-6">
+                  <Link
+                    className=" hover:text-moderate"
+                    title="portfolio"
+                    to="project-section"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Portfolio
+                  </Link>
+                </li>
+                <li className="mr-6">
+                  <Link
+                    className=" hover:text-moderate"
+                    title="portfolio"
+                    to="contact-section"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Contact Me
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
         )}
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 }
 
