@@ -8,7 +8,7 @@ function ProjectCards({ image, heading, description, github, link }) {
         <a href="#" title="project image" className="bg-gray-800">
           <img className="rounded-t-lg object-cover h-48 mx-auto my-auto" src={!image? "https://blog.hubbado.com/content/images/2020/01/projectmanager.png": image} alt="image not available" />
         </a>
-          <div className="flex flex-col justify-between h-36 px-5 py-2">
+          <div className="flex flex-col justify-between h-40 px-5 py-2">
             <div>
             <h5 className=" text-2xl font-bold tracking-tight">{heading}</h5>
             <p className=" font-normal text-sm">{updatedDesc}...</p>
@@ -31,7 +31,7 @@ function ProjectCards({ image, heading, description, github, link }) {
                 <a
                   href={link}
                   title="live link"
-                  className="  text-1xl font-semibold  "
+                  className= "  text-1xl font-semibold  " 
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

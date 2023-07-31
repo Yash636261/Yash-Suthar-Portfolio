@@ -5,16 +5,16 @@ function Project() {
   const cardData = [
     {
       image:
-        "https://th.bing.com/th/id/R.bb81017ace8cbaed9fcbb88cf2280cba?rik=ynMEw4fmarRg6A&riu=http%3a%2f%2fwww.designlab.net.au%2fwp-content%2fuploads%2fproject-manager-roll.jpg&ehk=z2LJ5lHVsEqDlj%2bhovdvyWlj8QRIqvGLVZ0%2btxmjEOU%3d&risl=&pid=ImgRaw&r=0",
+        "https://user-images.githubusercontent.com/98970491/257126745-a4543962-d52e-45f5-afa5-44e55e00e4e7.png",
       heading: "BookBuddy",
       description:
         "BookBuddy is a versatile library management system that caters to both students and authors. It offers an intuitive interface for easy book search by title, author, or genre. Users can borrow books through BookBuddy and conveniently check the due dates and details of borrowed books. With BookBuddy, managing library transactions and accessing book.",
       github: "https://github.com/Yash636261/BookBuddy",
-      link: "glittery-raindrop-63e8eb.netlify.app/",
+      link: "https://glittery-raindrop-63e8eb.netlify.app/",
     },
     {
       image:
-        "",
+        "https://user-images.githubusercontent.com/98970491/257134924-c377e302-f5ba-4342-8e2b-12d5d46f8c23.png",
 
       heading: "NewsHub",
       description:
@@ -24,12 +24,12 @@ function Project() {
     },
     {
       image:
-        "https://efc.web.unc.edu/wp-content/uploads/sites/2607/2016/05/project-management-copy.png",
+        "https://th.bing.com/th/id/R.bb81017ace8cbaed9fcbb88cf2280cba?rik=ynMEw4fmarRg6A&riu=http%3a%2f%2fwww.designlab.net.au%2fwp-content%2fuploads%2fproject-manager-roll.jpg&ehk=z2LJ5lHVsEqDlj%2bhovdvyWlj8QRIqvGLVZ0%2btxmjEOU%3d&risl=&pid=ImgRaw&r=0",
 
-      heading: "Database",
+      heading: "Police Feedback System",
       description:
-        "Managing, organizing, and optimizing databases for efficient data storage and retrieval.",
-      github: "",
+        "This is our First Hackathon Project (SSIP Hackathon) Just Deploying the project on Django",
+      github: "https://github.com/Yash636261/Police-Feedback-System-SSIP-Hackathon",
       link: "",
     },
   ];
@@ -41,7 +41,7 @@ function Project() {
           <p className="text-sm">what I have done.</p>
         </div>
 
-        <div className="flex justify-around items-center flex-wrap max-w-4xl mx-auto">
+        <div className="flex justify-around flex-wrap max-w-4xl mx-auto">
           {cardData.map(({ image, heading, description,github , link }) => (
             <ProjectCards
             key={heading}

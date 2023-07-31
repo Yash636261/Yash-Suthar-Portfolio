@@ -10,17 +10,17 @@ function Navbar() {
   };
 
   return (
-    <div className="fixed w-screen shadow-gray-900 shadow-lg text-dark bg-gradient-to-r from-rose-700 to-blue-600 border border-dark z-20 bg-dark">
+    <div className="fixed w-screen shadow-gray-900 shadow-md text-dark bg-gradient-to-r from-rose-700 to-blue-600 border border-dark z-20 bg-dark">
       <nav>
-        <div className="z-10 flex w-full p-2 border border-transparent rounded-lg shadow-md">
+        <div className="z-10 flex w-full p-1 border border-transparent rounded-lg shadow-md">
           <div className="container mx-auto flex justify-between">
             <div className="my-auto">
               <p className="font-bold text-lg cursor-default">｛ Yash Suthar ｝</p>
             </div>
-            <div className=" max-md:hidden text-sm font-bold mx-auto">
-              <ul className="w-full flex mx-2 border-0 p-2 rounded-lg drop-shadow-lg ">
+            <div className=" max-md:hidden text-md font-semibold mx-auto">
+              <ul className="w-full flex mx-2 border-0 p-2 rounded-lg drop-shadow-lg text-gray-400">
                 <li className="mr-6 cursor-pointer">
-                  <Link className="text-moderate" title="home page" aria-current="page" to="home"
+                  <Link className="text-light" title="home page" aria-current="page" to="home"
                   spy={true}
                   smooth={true}
                   offset={-70}
@@ -29,7 +29,7 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="mr-6 cursor-pointer">
-                  <Link className=" hover:text-moderate" title="about me" to="about-section"
+                  <Link className=" hover:text-light" title="about me" to="about-section"
                   spy={true}
                   smooth={true}
                   offset={-70}
@@ -38,7 +38,7 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="mr-6 cursor-pointer">
-                  <Link className=" hover:text-moderate" title="portfolio"  to="project-section"
+                  <Link className=" hover:text-light" title="portfolio"  to="project-section"
                   spy={true}
                   smooth={true}
                   offset={-70}
@@ -47,7 +47,7 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="mr-6 cursor-pointer">
-                  <Link className=" hover:text-moderate" title="contact page"  to="contact-section"
+                  <Link className=" hover:text-light" title="contact page"  to="contact-section"
                   spy={true}
                   smooth={true}
                   offset={-70}
@@ -87,7 +87,7 @@ function Navbar() {
         <div className=""></div>
 
         {Toggle && (<div
-          className={`mt-1 overflow-hidden transition-all transition-max-height duration-4000 ease-in-out border-2 border-gray-900 md:invisible visible w-64 rounded-xl absolute left-1/2 transform -translate-x-1/2 bg-dark `}
+          className={`mt-1 overflow-hidden transition-all transition-max-height duration-4000 ease-in-out border-2 border-gray-900 md:invisible visible w-64 rounded-xl absolute left-1/2 transform -translate-x-1/2 bg-gradient-to-bl from-slate-800 to-gray-700`}
         >
           <div className=" text-s font-bold mx-auto">
             <ul className="flex flex-col mx-2 my-10 z-0 justify-between h-40 border-0 p-2 rounded-lg text-light">
