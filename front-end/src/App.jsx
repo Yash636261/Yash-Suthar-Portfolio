@@ -8,7 +8,7 @@ import Project from './Components/Project'
 
 function App() {
   return (
-    <div className='bg-[#1f1f1f] font-sans'>
+    <div className='bg-light font-sans'>
       <Navbar/>
       <Hero/>
       <About/>

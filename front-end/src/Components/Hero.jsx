@@ -2,12 +2,13 @@ import { Element } from 'react-scroll/modules'
 
 function Hero() {
   return (
-    <Element id="home" className="bg-dark px-5">
-      <div className="relative max-lg:flex justify-center items-center min-h-screen lg:h-screen mx-auto max-w-5xl py-32">
+    <Element id="home" className=" bg-dark">
+       {/* bg-[url('https://wallpapercave.com/wp/wp6344097.jpg')] bg-no-repeat bg-cover bg-blend-soft-light */}
+      <div className=" px-5 relative max-lg:flex justify-center items-center min-h-screen lg:h-screen mx-auto max-w-5xl py-28">
         <div className="absolute max-lg:invisible bg-pink-400 rounded-full right-0 top-[30vh] w-72 h-72 filter blur-2xl opacity-50 animate-blob"></div>
         <div className="absolute max-lg:invisible bg-red-700 rounded-full right-36 top-[30vh] w-72 h-72 filter blur-2xl opacity-50 animate-blob animation-delay-2000"></div>
         <div className="flex mx-auto text-light h-full justify-center lg:justify-between items-center">
-          {/* bg-[url("../public/background.png")] bg-no-repeat bg-cover bg-blend-darken max-w-7xl bg-gray-600 */}
+           
           <div className=" lg:text-left text-center px-5 my-auto">
 
             {/* introduction */}
