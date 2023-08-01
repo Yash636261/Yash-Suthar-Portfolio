@@ -1,7 +1,33 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-scroll/modules";
 
 function Navbar() {
+  const [change, setChange] = useState(0);
+
+  const handleScroll =() =>{
+    const scrollY = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+    const maxScroll = documentHeight - windowHeight ;
+    const percentage = (scrollY/maxScroll)*100;
+
+    setChange(percentage);
+  }
+
+  useEffect(() => {
+    const handleScrollThrottle = () => {
+      requestAnimationFrame(handleScroll);
+    };
+
+    // Add the event listener when the component mounts
+    window.addEventListener('scroll', handleScrollThrottle);
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScrollThrottle);
+    };
+  },[]);
+
   const [Toggle, setToggle] = useState(false);
 
   const chageToggle = () => {
@@ -11,12 +37,15 @@ function Navbar() {
   return (
     <nav>
       <div className="fixed w-screen shadow-gray-900 shadow-md text-white bg-gradient-to-r from-rose-700 to-blue-600 border-0 z-20 bg-dark">
-        <div className="z-10 flex w-full p-1 border border-transparent rounded-lg shadow-md">
+        <div className="z-10 flex w-full py-1 px-3 border border-transparent rounded-lg shadow-md">
           <div className="container mx-auto flex justify-between">
             <div className="my-auto">
               <p className="font-bold text-lg cursor-default">
                 ｛ Yash Suthar ｝
               </p>
+              {/* <p className="font-bold text-lg cursor-default">
+                {change.toFixed(2)}%
+              </p> */}
             </div>
             <div className=" max-md:hidden text-md font-bold mx-auto">
               <ul className="w-full flex mx-2 border-0 p-2 rounded-lg drop-shadow-lg text-gray-400">
@@ -167,6 +196,14 @@ function Navbar() {
           </div>
         )}
       </div>
+      <img
+        id="nav-plane"
+        src="https://www.svgrepo.com/show/167852/overhead-cable-car.svg"
+        alt="airplane"
+        className="hidden md:block h-12 fixed z-10"
+        draggable="false"
+        style={{ left: `${change}%`, top: "45px" }}
+      />
     </nav>
   );
 }

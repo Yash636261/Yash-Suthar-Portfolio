@@ -89,7 +89,7 @@ function Contact() {
             <p className="text-xs">@Yash636261</p>
           </div>
         </div>
-        <div className="md:w-96">
+        <div className="sm:w-96">
           <p className="text-center text-lg font-semibold my-5">Write Me</p>
           <div className="px-5 w-full ">
             <form>

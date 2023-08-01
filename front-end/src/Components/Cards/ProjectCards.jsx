@@ -4,7 +4,7 @@ function ProjectCards({ image, heading, description, github, link }) {
   const updatedDesc = description.split(" ").slice(0, 10).join(" ");
   return (
     <div>
-      <div className=" w-64 m-4 bg-gray-100 border border-gray-200 rounded-lg shadow transition duration-200 hover:scale-105">
+      <div className=" w-64 m-4  border border-gray-200 rounded-lg shadow transition duration-200 hover:scale-105">
         <div title="project image" className="bg-gray-800 border-0 rounded-t-lg">
           <img className="rounded-t-lg object-cover h-48 mx-auto my-auto" src={!image? "https://blog.hubbado.com/content/images/2020/01/projectmanager.png": image} alt="image not available" />
         </div>
