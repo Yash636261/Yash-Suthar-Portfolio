@@ -36,7 +36,7 @@ function Navbar() {
 
   return (
     <nav>
-      <div className="fixed w-screen shadow-gray-900 shadow-md text-white bg-gradient-to-r from-rose-700 to-blue-600 border-0 z-20 bg-dark">
+      <div className="fixed w-screen shadow-gray-900 shadow-md text-white bg-gradient-to-r from-slate-800 to-slate-600 border-700 z-20 bg-dark">
         <div className="z-10 flex w-full py-1 px-3 border border-transparent rounded-lg shadow-md">
           <div className="container mx-auto flex justify-between">
             <div className="my-auto">
@@ -200,9 +200,9 @@ function Navbar() {
         id="nav-plane"
         src="https://www.svgrepo.com/show/167852/overhead-cable-car.svg"
         alt="airplane"
-        className="hidden md:block h-12 fixed z-10"
+        className=" block h-8 md:h-12 fixed z-10"
         draggable="false"
-        style={{ left: `${change}%`, top: "45px" }}
+        style={{ left: `${change}%`, top: "40px" }}
       />
     </nav>
   );
