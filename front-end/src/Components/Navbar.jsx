@@ -131,7 +131,6 @@ function Navbar() {
           </div>
         </div>
 
-        <div className=""></div>
 
         {Toggle && (
           <div
@@ -196,6 +195,8 @@ function Navbar() {
           </div>
         )}
       </div>
+      
+      <div className=""></div>
       <img
         id="nav-plane"
         src="https://www.svgrepo.com/show/167852/overhead-cable-car.svg"

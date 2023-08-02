@@ -2,11 +2,11 @@ import { Element } from 'react-scroll/modules'
 
 function Hero() {
   return (
-    <Element id="home" className=" bg-dark">
-       {/* bg-[url('https://wallpapercave.com/wp/wp6344097.jpg')] bg-no-repeat bg-cover bg-blend-soft-light */}
+    <Element id="home" className=" bg-dark bg-[url('https://wallpapercave.com/wp/wp6344097.jpg')] bg-no-repeat bg-cover bg-blend-soft-light">
+       {/*  */}
       <div className=" px-5 relative max-lg:flex justify-center items-center min-h-screen lg:h-screen mx-auto max-w-5xl py-28">
-        <div className="absolute max-lg:invisible bg-pink-400 rounded-full right-0 top-[30vh] w-72 h-72 filter blur-2xl opacity-50 animate-blob"></div>
-        <div className="absolute max-lg:invisible bg-red-700 rounded-full right-36 top-[30vh] w-72 h-72 filter blur-2xl opacity-50 animate-blob animation-delay-2000"></div>
+        {/* <div className="absolute max-lg:invisible bg-pink-400 rounded-full right-0 top-[30vh] w-72 h-72 filter blur-2xl opacity-50 animate-blob"></div>
+        <div className="absolute max-lg:invisible bg-red-700 rounded-full right-36 top-[30vh] w-72 h-72 filter blur-2xl opacity-50 animate-blob animation-delay-2000"></div> */}
         <div className="flex mx-auto text-light h-full justify-center lg:justify-between items-center">
            
           <div className=" lg:text-left text-center px-5 my-auto">
@@ -80,7 +80,7 @@ function Hero() {
           <div className=" flex justify-end items-center max-lg:hidden">
             <img
               className=" border rounded-full w-80 h-80 object-contain z-10"
-              src="https://th.bing.com/th/id/OIP.JAAd31mxF33HqZEgYq9zgAHaHv?pid=ImgDet&rs=1"
+              src="https://avatars.githubusercontent.com/u/98970491?v=4"
               alt="profileimage"
             />
           </div>
@@ -90,6 +90,7 @@ function Hero() {
                 <p className="font-bold text-xl mb-5">Have any project ideas? Let&lsquo;s discuss.</p>
                 <a className="font-semibold text-sm rounded-lg py-2 px-4 hover:text-red-100 bg-moderate text-light" href="">Strat Talking &gt;&gt;</a>
             </div> */}
+            
       </div>
     </Element>
   );
