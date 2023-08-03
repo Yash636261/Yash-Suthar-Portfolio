@@ -2,7 +2,7 @@ import { Element } from 'react-scroll/modules'
 
 function Hero() {
   return (
-    <Element id="home" className=" bg-dark bg-[url('https://wallpapercave.com/wp/wp6344097.jpg')] bg-no-repeat bg-cover bg-blend-soft-light">
+    <Element id="home" className=" bg-dark bg-[url('../public/bg.jpg')] bg-no-repeat bg-cover bg-blend-soft-light">
        {/*  */}
       <div className=" px-5 relative max-lg:flex justify-center items-center min-h-screen lg:h-screen mx-auto max-w-5xl py-28">
         {/* <div className="absolute max-lg:invisible bg-pink-400 rounded-full right-0 top-[30vh] w-72 h-72 filter blur-2xl opacity-50 animate-blob"></div>
@@ -79,8 +79,8 @@ function Hero() {
 
           <div className=" flex justify-end items-center max-lg:hidden">
             <img
-              className=" border rounded-full w-80 h-80 object-contain z-10"
-              src="https://avatars.githubusercontent.com/u/98970491?v=4"
+              className=" border-0  w-96 h-96 object-contain z-10"
+              src="../public/coder.svg"
               alt="profileimage"
             />
           </div>

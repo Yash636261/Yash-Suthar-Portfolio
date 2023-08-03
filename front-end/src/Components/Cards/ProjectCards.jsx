@@ -9,7 +9,7 @@ function ProjectCards({ image, heading, description, github, link }) {
           <img className="rounded-t-lg object-cover h-48 mx-auto my-auto" src={!image? "https://blog.hubbado.com/content/images/2020/01/projectmanager.png": image} alt="image not available" />
         </div>
           <div className="flex flex-col justify-between h-40 px-5 py-2">
-            <div>
+            <div className="h-28 overflow-hidden">
             <h5 className=" text-2xl font-bold tracking-tight">{heading}</h5>
             <p className=" font-normal text-sm">{updatedDesc}...</p>
 
