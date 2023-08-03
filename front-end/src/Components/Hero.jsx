@@ -1,9 +1,9 @@
 import { Element } from 'react-scroll/modules'
-import coder from '../assets/coder.png';
+import coder from '../assets/coder.webp';
 
 function Hero() {
   return (
-    <Element id="home" className=" bg-dark bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover bg-blend-soft-light">
+    <Element id="home" className=" bg-dark bg-[url('./assets/bg.webp')] bg-no-repeat bg-cover bg-blend-soft-light">
        {/*  */}
       <div className=" px-5 relative max-lg:flex justify-center items-center min-h-screen lg:h-screen mx-auto max-w-5xl py-28">
         {/* <div className="absolute max-lg:invisible bg-pink-400 rounded-full right-0 top-[30vh] w-72 h-72 filter blur-2xl opacity-50 animate-blob"></div>
