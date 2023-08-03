@@ -80,7 +80,7 @@ function Hero() {
           <div className=" flex justify-end items-center max-lg:hidden">
             <img
               className=" border-0  w-96 h-96 object-contain z-10"
-              src="../public/coder.svg"
+              src="../public/coder.png"
               alt="profileimage"
             />
           </div>
