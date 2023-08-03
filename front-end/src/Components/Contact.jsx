@@ -91,7 +91,7 @@ function Contact() {
         </div>
         <div className="sm:w-96">
           <p className="text-center text-lg font-semibold my-5">Write Me</p>
-          <div className="px-5 w-full ">
+          <div className="px-5 w-full">
             <form>
               <div>
                 <label
