@@ -14,7 +14,7 @@ function About() {
             <p className='text-sm'>My introduction</p>
         </div >
         <div className=' max-w-3xl mx-auto flex flex-col lg:flex-row-reverse justify-around items-center my-auto'>
-            <div className='ml-4 my-10 max-md:hidden z-10'>
+            <div className='ml-4 my-10 z-10'>
                 <img className='border rounded-full w-64' src="https://avatars.githubusercontent.com/u/98970491?v=4" alt="profileimage" />
             </div>
             <div className='my-10'>

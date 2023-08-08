@@ -50,7 +50,7 @@ function Contact() {
         <p className="font-bold text-3xl">Get In Touch</p>
         <p className="text-sm">Contact Me</p>
       </div>
-      <div className=" max-w-4xl mx-auto flex flex-col sm:flex-row justify-around">
+      <div className=" max-w-5xl mx-auto flex flex-col sm:flex-row justify-around">
         <div className="p-5 mx-auto flex flex-wrap max-md:justify-around flex-col">
           <div className="mx-2 bg-gray-100 border-2 my-4 p-5 rounded-lg w-40 object-contain hover:shadow-lg hover:border-gray-300">
             <svg

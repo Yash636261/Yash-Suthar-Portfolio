@@ -1,5 +1,5 @@
 import { Element } from 'react-scroll/modules'
-import coder from '../assets/coder.webp';
+import coder from '../assets/coder.png';
 
 function Hero() {
   return (
