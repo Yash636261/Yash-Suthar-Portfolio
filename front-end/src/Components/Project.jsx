@@ -32,6 +32,16 @@ function Project() {
       github: "https://github.com/Yash636261/Police-Feedback-System-SSIP-Hackathon",
       link: "",
     },
+    {
+      image:
+        "https://user-images.githubusercontent.com/98970491/259052816-35adaa4a-ed0e-43ee-8e1b-94376927e9f3.png",
+
+      heading: "ProjectPulse",
+      description:
+        "ProjectPulse is a Project Managment web tool which is created to make easier to work in team during projects.",
+      github: "https://github.com/Yash636261/ProjectPulse",
+      link: "https://main--project-pulse-pro.netlify.app/",
+    },
   ];
   return (
     <Element id="project-section" className="bg-light text-dark py-24">
@@ -41,7 +51,7 @@ function Project() {
           <p className="text-sm">what I have done.</p>
         </div>
 
-        <div className="flex justify-around flex-wrap max-w-4xl mx-auto">
+        <div className="flex justify-start flex-wrap max-w-4xl mx-auto">
           {cardData.map(({ image, heading, description,github , link }) => (
             <ProjectCards
             key={heading}
