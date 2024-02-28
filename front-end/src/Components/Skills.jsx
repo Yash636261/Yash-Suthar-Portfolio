@@ -7,19 +7,19 @@ function Skills() {
       heading: "Front-end",
       description:
         "Creating intuitive, responsive, and visually appealing user interfaces and experiences.",
-      techAndTools:[' HTML/CSS' ,'Javascript','React' ,'NEXT.js'],
+      techAndTools:[' HTML/CSS' ,'Javascript','React' ,'NEXT.js','Tailwind'],
     },
     {
       heading: "Back-end",
       description:
         "Designing and developing scalable, efficient, and secure server-side applications.",
-      techAndTools: ['Express', 'Node.js'],
+      techAndTools: ['Express', 'Node.js','restAPI'],
     },
     {
       heading: "Database",
       description:
         "Managing, organizing, and optimizing databases for efficient data storage and retrieval.",
-      techAndTools: ['MongoDB'],
+      techAndTools: ['MongoDB','postgreSQL'],
     },
   ];
 

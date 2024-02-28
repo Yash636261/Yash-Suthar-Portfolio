@@ -50,8 +50,8 @@ function Contact() {
         <p className="font-bold text-3xl">Get In Touch</p>
         <p className="text-sm">Contact Me</p>
       </div>
-      <div className=" max-w-5xl mx-auto flex flex-col sm:flex-row justify-around">
-        <div className="p-5 mx-auto flex flex-wrap max-md:justify-around flex-col">
+      <div className=" max-w-5xl mx-auto flex flex-col sm:flex-row justify-evenly">
+        <div className="p-5 mx-auto flex max-md:justify-around flex-col">
           <div className="mx-2 bg-gray-100 border-2 my-4 p-5 rounded-lg w-40 object-contain hover:shadow-lg hover:border-gray-300">
             <svg
               className="w-6 h-6 mb-2"
@@ -89,7 +89,7 @@ function Contact() {
             <p className="text-xs">@Yash636261</p>
           </div>
         </div>
-        <div className="sm:w-96">
+        <div className="sm:w-full md:px-24">
           <p className="text-center text-lg font-semibold my-5">Write Me</p>
           <div className="px-5 w-full">
             <form>
@@ -161,11 +161,11 @@ function Contact() {
                 <button
                   type="submit"
                   onClick={handleSubmit}
-                  className=" flex items-center my-5 bg-moderate text-light py-2 px-4 text-sm font-semibold border rounded-md hover:shadow-lg"
+                  className=" group flex items-center my-5 bg-moderate text-light py-2 px-4 text-sm font-semibold border rounded-md hover:shadow-lg"
                 >
                   <span className="mr-2">Send</span>
                   <span
-                    className={`pr-3 transition duration-1000 hover:translate-x-5`}
+                    className={`pr-3 transition duration-1000 group-hover:translate-x-5`}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

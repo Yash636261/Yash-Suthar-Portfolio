@@ -60,7 +60,7 @@ function Project() {
           <p className="text-sm">what I have done.</p>
         </div>
 
-        <div className="flex justify-start flex-wrap max-w-4xl mx-auto">
+        <div className="flex justify-center flex-wrap max-w-4xl mx-auto">
           {cardData.map(({ image, heading, description,github , link }) => (
             <ProjectCards
             key={heading}
