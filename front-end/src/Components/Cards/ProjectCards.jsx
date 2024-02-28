@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
+import { Link } from "react-scroll/modules";
 
 function ProjectCards({ image, heading, description, github, link }) {
-  const updatedDesc = description.split(" ").slice(0, 10).join(" ");
   return (
     <div>
       <div className=" w-64 m-4  border border-gray-200 rounded-lg shadow transition duration-200 hover:scale-105">
@@ -11,7 +11,7 @@ function ProjectCards({ image, heading, description, github, link }) {
           <div className="flex flex-col justify-between h-40 px-5 py-2">
             <div className="h-28 overflow-hidden">
             <h5 className=" text-2xl font-bold tracking-tight">{heading}</h5>
-            <p className=" font-normal text-sm">{updatedDesc}...</p>
+            <p className=" font-normal text-sm line-clamp-3">{description}...</p>
 
             </div>
 
@@ -27,7 +27,8 @@ function ProjectCards({ image, heading, description, github, link }) {
                   </svg>
                 </a>
               </div>
-              <div className=" font-bold mt-1 mx-3 transition duration-100 hover:scale-110">
+              { link === "" ? null : (
+               <div className=" font-bold mt-1 mx-3 transition duration-100 hover:scale-110">
                 <a
                   href={link}
                   title="live link"
@@ -42,6 +43,8 @@ function ProjectCards({ image, heading, description, github, link }) {
                   </svg>
                 </a>
               </div>
+              )}
+              
             </div>
           </div>
       </div>
