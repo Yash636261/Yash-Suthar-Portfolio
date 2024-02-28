@@ -26,7 +26,7 @@ function Contact() {
     try {
       // Send the form data to the server using Axios
       const response = await axios.post(
-        "http://localhost:4000/api/formData",
+        "https://yash-suthar.onrender.com/api/formData",
         formData
       );
       console.log("Server Response:", response.data);
