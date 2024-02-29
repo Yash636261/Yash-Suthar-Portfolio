@@ -4,7 +4,6 @@ import coder from '../assets/coder.webp';
 function Hero() {
   return (
     <Element id="home" className=" bg-dark bg-[url('./assets/bg.webp')] bg-no-repeat bg-cover bg-blend-soft-light">
-       {/*  */}
       <div className=" px-5 relative max-lg:flex justify-center items-center min-h-screen lg:h-screen mx-auto max-w-5xl py-28">
         {/* <div className="absolute max-lg:invisible bg-pink-400 rounded-full right-0 top-[30vh] w-72 h-72 filter blur-2xl opacity-50 animate-blob"></div>
         <div className="absolute max-lg:invisible bg-red-700 rounded-full right-36 top-[30vh] w-72 h-72 filter blur-2xl opacity-50 animate-blob animation-delay-2000"></div> */}
@@ -18,9 +17,7 @@ function Hero() {
             <p className="font-bold text-border text-4xl mb-3 tracking-wide">
               &lt;YASH SUTHAR /&gt;
             </p>
-            <p className="text-xl mb-10">
-              {/* Building Bridges between Design, Code,<br></br> and User
-              experience. */}
+            <p className="text-xl mb-10"
               Creating innovative web solutions from <br></br>
               end to end.
             </p>
@@ -85,13 +82,7 @@ function Hero() {
               alt="profileimage"
             />
           </div>
-          {/* </div> */}
         </div>
-        {/* <div className="max-w-xl mx-auto text-center py-20">
-                <p className="font-bold text-xl mb-5">Have any project ideas? Let&lsquo;s discuss.</p>
-                <a className="font-semibold text-sm rounded-lg py-2 px-4 hover:text-red-100 bg-moderate text-light" href="">Strat Talking &gt;&gt;</a>
-            </div> */}
-            
       </div>
     </Element>
   );

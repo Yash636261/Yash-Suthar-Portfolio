@@ -5,7 +5,7 @@ function Project() {
   const cardData = [
     {
       image:
-        "https://private-user-images.githubusercontent.com/98970491/305068407-588225c5-3942-481e-8b8e-4dd8cd2c98c2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDkxMTA2NDEsIm5iZiI6MTcwOTExMDM0MSwicGF0aCI6Ii85ODk3MDQ5MS8zMDUwNjg0MDctNTg4MjI1YzUtMzk0Mi00ODFlLThiOGUtNGRkOGNkMmM5OGMyLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjI4VDA4NTIyMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWU3MzA0ZjY0ZTZmMjQ2YTlmNzBiNWMxZjIwYTU0YThiYmIzMTUxMTU0NmUxZTIyNWM5ODRjNDE4NzFjNTgzYjEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.twZhtWNSBNVEs-k9esKG6d3SW-uQx2DcfgTuNaIezag",
+        "https://github.com/Yash636261/MedVault/assets/98970491/588225c5-3942-481e-8b8e-4dd8cd2c98c2",
       heading: "MedVault",
       description:
         "MedVault is an advanced patient data management system designed to ensure data security, accessibility, interoperability, and privacy protection within the healthcare ecosystem. It serves as a reliable partner in managing secure health data, providing essential features for healthcare providers and patients.",
