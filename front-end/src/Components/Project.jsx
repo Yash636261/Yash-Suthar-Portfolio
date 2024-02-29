@@ -49,7 +49,7 @@ function Project() {
       description:
         "ProjectPulse is a Project Managment web tool which is created to make easier to work in team during projects.",
       github: "https://github.com/Yash636261/ProjectPulse",
-      link: "https://main--project-pulse-pro.netlify.app/",
+      link: "",
     },
   ];
   return (
