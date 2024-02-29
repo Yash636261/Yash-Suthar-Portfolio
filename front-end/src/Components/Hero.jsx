@@ -17,7 +17,7 @@ function Hero() {
             <p className="font-bold text-border text-4xl mb-3 tracking-wide">
               &lt;YASH SUTHAR /&gt;
             </p>
-            <p className="text-xl mb-10"
+            <p className="text-xl mb-10">
               Creating innovative web solutions from <br></br>
               end to end.
             </p>
