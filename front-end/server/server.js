@@ -11,6 +11,9 @@ app.use(express.json());
 app.use(cors());
 
 app.use("/api/formData",formData);
+app.get("/", (req, res) => {  
+  res.send("Hello World");
+});
 
 const port = process.env.PORT || 4000;
 

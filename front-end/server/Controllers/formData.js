@@ -1,8 +1,8 @@
-const Task = require("../models/Task")
+const Response = require("../models/Task")
 
 const sendData = async (req, res) => {
     try {
-        const task = await Task.create(req.body);
+        const task = await Response.create(req.body);
         res.status(201).json(task);
     //   const ans = await req.body; // Access request body using req.body instead of req.params()
     //   console.log("Received data:", ans);

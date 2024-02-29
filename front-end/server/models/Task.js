@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const TaskSchema = new mongoose.Schema({
+const ResponseSchema = new mongoose.Schema({
   name: {
     type: String,
     required: [true, 'must provide name'],
@@ -16,4 +16,4 @@ const TaskSchema = new mongoose.Schema({
 
 })
 
-module.exports = mongoose.model('Task', TaskSchema)
+module.exports = mongoose.model('Response', ResponseSchema)

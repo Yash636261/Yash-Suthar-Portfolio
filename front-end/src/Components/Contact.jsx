@@ -3,6 +3,7 @@ import axios from "axios";
 import { Element } from "react-scroll/modules";
 
 function Contact() {
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,27 +22,25 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
     console.log("triggered");
 
     try {
-      // Send the form data to the server using Axios
       const response = await axios.post(
-        "https://yash-suthar.onrender.com/api/formData",
+        "https://yash-suthar.onrender.com/api/formData/submit",
         formData
       );
       console.log("Server Response:", response.data);
 
-      // Optionally, handle any further actions after successful form submission
-      // For example, show a success message, redirect the user, etc.
-
-      // Reset the form after successful submission
       setFormData({
-        name: "", // Reset to empty string
-        email: "", // Reset to empty string
-        message: "", // Reset to empty string
+        name: "", 
+        email: "", 
+        message: "", 
       });
+      setIsLoading(false);
     } catch (error) {
       console.log(error);
+      setIsLoading(false);
     }
   };
   return (
@@ -158,7 +157,7 @@ function Contact() {
                   placeholder="Leave a comment..."
                 ></textarea>
 
-                <button
+                {isLoading ? (<div className="mr-2 my-5 text-black">Your response is being submitted...</div>):(<button
                   type="submit"
                   onClick={handleSubmit}
                   className=" group flex items-center my-5 bg-moderate text-light py-2 px-4 text-sm font-semibold border rounded-md hover:shadow-lg"
@@ -176,7 +175,8 @@ function Contact() {
                       <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
                     </svg>
                   </span>
-                </button>
+                </button>)}
+                
               </div>
             </form>
           </div>
