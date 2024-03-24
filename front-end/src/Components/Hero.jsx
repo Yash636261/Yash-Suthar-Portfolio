@@ -1,7 +1,13 @@
 import { Element } from 'react-scroll/modules'
 import coder from '../assets/coder.webp';
+import { useGSAP} from '@gsap/react';
+import gsap from 'gsap';
 
 function Hero() {
+  useGSAP(()=>{
+    gsap.to('#text',{opacity:1,y:0,delay:0,ease:'power1.inOut'})
+    gsap.fromTo('.para',{opacity:0,y:20},{opacity:1,y:0,delay:0.2,stagger:0.1})
+  },[])
   return (
     <Element id="home" className=" bg-dark bg-[url('./assets/bg.webp')] bg-no-repeat bg-cover bg-blend-soft-light">
       <div className=" px-5 relative max-lg:flex justify-center items-center min-h-screen lg:h-screen mx-auto max-w-5xl py-28">
@@ -13,11 +19,11 @@ function Hero() {
 
             {/* introduction */}
 
-            <p className="text-xl tracking-wider">Hello, my name is</p>
-            <p className="font-bold text-border text-4xl mb-3 tracking-wide">
+            <p id='text' className="text-xl tracking-wider opacity-0">Hello, my name is</p>
+            <p id='text' className="font-bold text-border text-4xl mb-3 tracking-wide opacity-0">
               &lt;YASH SUTHAR /&gt;
             </p>
-            <p className="text-xl mb-10">
+            <p className="text-xl mb-10 para">
               Creating innovative web solutions from <br></br>
               end to end.
             </p>
